@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('css/theme_switch.css');
+@import url('css/lang_selector.css');
 
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'REM', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 html {
@@ -12,12 +14,13 @@ html {
 }
 
 body {
+    background-color: #222;
+    color: #fff;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
 header {
-    /* background-color: rgba(255, 255, 255, 0.45); */
+    /* background-color: #ffffff86; */
     width: 90%;
     height: 80px;
     display: flex;
@@ -28,10 +31,28 @@ header {
 header ul.tabs-container{
     background-color: black;
     color: white;
-    width: 70%;
+    width: calc(100% - 375px);
     display: flex;
 }
 
 header ul.tabs-container li {
     list-style: none;
+}
+
+header form {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header form .ml-auto {
+    margin-left: auto;
+}
+
+header form .ml-20 {
+    margin-left: 20px;
 }

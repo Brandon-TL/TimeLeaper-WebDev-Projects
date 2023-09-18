@@ -1,0 +1,30 @@
+[
+  { 
+    "lang" : "Swedish",
+    "f_link" : "selector/flags/sweden.png"
+  },
+  { 
+    "lang" : "English",
+    "f_link" : "selector/flags/england.png"
+  },
+  { 
+    "lang" : "Russian",
+    "f_link" : "selector/flags/russia.png"
+  },
+  { 
+    "lang" : "German",
+    "f_link" : "selector/flags/germany.png"
+  },
+  { 
+    "lang" : "Italian",
+    "f_link" : "selector/flags/italy.png"
+  },
+  { 
+    "lang" : "Japanese",
+    "f_link" : "selector/flags/japan.png"
+  },
+  { 
+    "lang" : "Spanish",
+    "f_link" : "selector/flags/spain.png"
+  }
+]

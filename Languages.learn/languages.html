@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Languages</title>
     <link rel="stylesheet" href="style.css">
+    <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -12,19 +13,34 @@
 </head>
 <body>
     <header>
-        <ul class="tabs-container">
-            <li>Alphabat</li>
-            <li>Pronous</li>
-            <li>Dictionary</li>
-            <li></li>
-            <li></li>
-        </ul>
-        <form action="">
-            <select name="" id="">
-                <option value=""></option>
-            </select>
+        <form>
+            Site language :
+            <div class="custom-select ml-20">
+                <div class="select-button"></div>
+                <div class="select-dropdown"></div>
+            </div>
+            <div class="ml-auto">Learn :</div>
+            <div class="custom-select ml-20">
+                <div class="select-button"></div>
+                <div class="select-dropdown"></div>
+            </div>
+            <label class="switch ml-20">
+                <input type="checkbox">
+                <span class="moon"><ion-icon name="moon"></ion-icon></span>
+                <span class="sun"><ion-icon name="sunny"></ion-icon></span>
+            </label>
         </form>
     </header>
-    <script src="tabs.js"></script>
+    <main>
+        <!-- <ul class="tabs-container">
+            <li>Alfabeto</li>
+            <li>Pronombres</li>
+            <li>Diccionario</li>
+        </ul> -->
+        <div class="cont"></div>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
