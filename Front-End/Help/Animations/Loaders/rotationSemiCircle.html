@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: black;
+        }
+
+        .loader {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+            animation: animate 1s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(9deg);
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .loader::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background: #000;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        
+        .loader::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+            border-radius: 50%;
+            z-index: 1000;
+            z-index: 1;
+            filter: blur(30px);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

@@ -2,7 +2,7 @@ label.switch {
     position: relative;
     width: 80px;
     height: 40px;
-    background: #141414;
+    background: var(--label-switch-bg-color);
     border-radius: 50px;
 }
 
@@ -14,34 +14,30 @@ label.switch span {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 40px;
     height: 40px;
+    font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
-    transition: 0.5s;
     align-items: center;
-    border: 3px solid #141414;
 }
 
 label.switch span.moon {
     left: 40px;
+    color: var(--span-moon-color);
 }
 
-label.switch span ion-icon {
-    color: #fff;
-    font-size: 20px;
+label.switch span.sun {
+    color: var(--span-sun-color);
 }
 
-label.switch input ~ span.sun {
-    background-color: #ffffff30;
-}
-
-label.switch input:checked ~ span.moon {
-    background-color: #ffffff30;
-}
-
-label.switch input:checked ~ span.sun {
-    background-color: transparent;
+span.theme-indicator {
+    background-color: var(--theme-indicator-bg-color);
+    border: 3px solid var(--theme-indicator-border-color);
+    left: 40px;
+    transition: all .5s;
+    z-index: 1;
 }

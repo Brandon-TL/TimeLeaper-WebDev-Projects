@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .form {
+            background: #808080;
+            width: 50rem;
+        }
+
+        .title {
+            background: #BBBBBB;
+            width: 100%;
+            height: 10%;
+            padding: 0.5rem;
+        }
+
+        .inputs {
+            width: 100%;
+            padding: 0px 0px 20px 20px;
+        }
+
+        td {
+            padding: 0.25rem;
+        }
+
+        input {
+            height: 2rem;
+            border: none;
+            border-radius: 2.5px;
+            margin-right: 20px;
+        }
+
+        button {
+            color: gray;
+            background: white;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            display: none;
+            margin: 0;
+        }
+
+        button:hover {
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Almacenamiento Local</title>
+</head>
+<body>
+    <div class="form">
+        <div class="title">
+            INFORMACION PERSONAL
+        </div>
+        <div class="inputs">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="nombre"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="title">
+            DIRECCION
+        </div>
+        <div class="inputs">
+            <table>
+                <tr>
+                    <td><label for="calle">Calle,nº,piso</label></td>
+                    <td><label for="poblacion">Poblacion</label></td>
+                    <td><label for="provincia">Provincia</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="calle"></td>
+                    <td><input type="text" id="poblacion"></td>
+                    <td><input type="text" id="provincia"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="title">
+            TELÉFONOS
+        </div>
+        <div class="inputs">
+            <table>
+                <tr>
+                    <td><label for="movil">Móvil</label></td>
+                    <td><label for="casa">Casa</label></td>
+                    <td><label for="trabajo">Trabajo</label></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="movil"></td>
+                    <td><input type="text" id="casa"></td>
+                    <td><input type="text" id="trabajo"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <button type="button" onclick="agregarDatos()">AGREGAR DATOS</button>
+    <button type="button" onclick="buscar()">BUSCAR</button>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"href="CSS/IMG/game-controller-outline.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/settings.css">
+    <link rel="stylesheet" href="CSS/general.css">
+    <title>Gameloft - Settings</title>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <a href="home.html"><img src="IMG/gameloft.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="list">
+                    <a href="#">
+                        <span class="text">Search</span><br>
+                        <span class="icon search">
+                            <input type="text" name="search" id="search">
+                            <ion-icon class="top" name="search-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="community.html">
+                        <span class="text">Community</span><br>
+                        <span class="icon">
+                            <ion-icon name="earth-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="home.html">
+                        <span class="text">Home</span><br>
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                        <span class="text">Settings</span><br>
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="sett">
+            <div class="expand"><ion-icon name="add-outline"></ion-icon></div>
+            <div class="contract"><ion-icon name="remove-outline"></ion-icon></div>
+            <ul>
+                <li><a class="set" href="#"><ion-icon class="arrow" name="caret-forward-outline"></ion-icon> PERSONALIZAR</a></li>
+                <li><a class="set" href="#"><ion-icon class="arrow" name="caret-forward-outline"></ion-icon> PERFIL</a></li>
+                <li><a class="set" href="#"><ion-icon class="arrow" name="caret-forward-outline"></ion-icon> CUENTAS</a></li>
+                <li><a class="set selected" href="#"><ion-icon class="arrow" name="caret-forward-outline"></ion-icon> AYUDA</a></li>
+            </ul>
+        </div><div class="cover"></div><!-- 
+     --><div class="ayuda">
+            <h3>AYUDA</h3>
+            <hr>
+            Si necesitas ayuda puedes contactar con nuestro servicio al cliente llamando al <span style="color: blue; cursor: pointer;">+64 999-999-999</span> o bien
+            enviandonos un e-mail.
+            <br><br>
+            <form>
+                <input placeholder="E-mail de contacto" type="email" id="email" style="width: 100%; padding: 0.5em;"><br><br>
+                <textarea placeholder="Comenta tu problema" name="comm" cols="77" rows="5"></textarea>
+            </form>
+            <br>
+            <h3>POLITICAS Y PRIVACIDAD</h3>
+            <hr>
+                <ul>
+                    <li>
+                        <a href="https://www.gameloft.com/en/conditions-of-use" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gameloft.com/en/privacy-notice" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    </li><br>
+                    <li>
+                        <a href="https://www.gameloft.com/en/legal/showcase-cookie-policy" target="_blank" rel="noopener noreferrer">Cookies Policy</a>
+                    </li><br>
+                    <li>
+                        <a href="https://www.gameloft.com/en/information/legal-notices" target="_blank" rel="noopener noreferrer">Legal Notices</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gameloft.com/en/information/event" target="_blank" rel="noopener noreferrer">Event Rules</a>
+                    </li>
+                </ul>
+            <br>
+            <h3>NUESTRAS REDES</h3>
+            <hr> 
+                <div class="webs">
+                    <a target="_blank" href="https://twitter.com/gameloft"><ion-icon style="color: #1C99E7;" name="logo-twitter"></ion-icon></a>
+                    <a target="_blank" href="https://es-es.facebook.com/gameloft/"><ion-icon style="color: #0034B7;" name="logo-facebook"></ion-icon></a>
+                    <a target="_blank" href="https://www.instagram.com/gameloft/"><ion-icon style="color: #B42B9A;" name="logo-instagram"></ion-icon></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/gameloft"><ion-icon style="color: #2867B2;" name="logo-linkedin"></ion-icon></ion-icon></a>
+                    <a target="_blank" href="https://www.youtube.com/user/Gameloft"><ion-icon style="color: #F20000;" name="logo-youtube"></ion-icon></a>
+                </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="copyright">
+            Copyright ©. All rights reserved to <a target="_blank" href="https://twitter.com/_time_leaper">@_time_leaper</a>. 2021-<script>let year = new Date().getFullYear();document.write(year);</script>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="JS/general.js"></script>
+    <script src="JS/settings.js"></script>
+</body>
+</html>

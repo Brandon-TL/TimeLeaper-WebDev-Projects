@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: rgba(14,24,128,1);
+    background-image:
+        url("https://www.nedgia.es/quierogasnatural/wp-content/uploads/sites/6/2020/11/efecto_nieve_2.gif"), /* SNOW */
+        url("https://thumbs.gfycat.com/PresentSoreCanvasback-size_restricted.gif"), /* SNOWMAN */
+        url("https://31.media.tumblr.com/641f02b216e5e0f4b3c34dc9a0224900/tumblr_my1axiKXlk1rasmy1o1_500.gif"), /* RUDOLF 1 */
+        url("https://media0.giphy.com/media/imbTfdz5TWSsw/giphy.gif"), /* RUDOLF 2 */
+        url("https://media0.giphy.com/media/imbTfdz5TWSsw/giphy.gif"), /* RUDOLF 3 */
+        url("http://assets.stickpng.com/thumbs/58f9ff320ed2bdaf7c128334.png"), /* MOON */
+        url("https://www.clipartmax.com/png/full/145-1456610_blue-snowy-ground-png-clipart-image-blue-snow-ground-png.png"), /* FLOOR */
+        linear-gradient( #1F2665, #773985, #D56687, #FEB85E);
+    background-repeat:
+        repeat, /* SNOW */
+        no-repeat, /* SNOWMAN */
+        no-repeat, /* RUDOLF 1 */
+        no-repeat, /* RUDOLF 2 */
+        no-repeat, /* RUDOLF 3 */
+        no-repeat, /* MOON */
+        no-repeat; /* FLOOR */
+    background-position: 
+        top, /* SNOW */
+        top 95% left 25%, /* SNOWMAN */
+        top 90% left 70%, /* RUDOLF 1 */
+        top 90% left 65%, /* RUDOLF 2 */
+        top 90% left 74%, /* RUDOLF 3 */
+        top 10% left 10%, /* MOON */
+        bottom; /* FLOOR */
+    background-size:
+        25%, /* SNOW */
+        20%, /* SNOWMAN */
+        10%, /* RUDOLF 1 */
+        3%, /* RUDOLF 2 */
+        5%, /* RUDOLF 3 */
+        10%, /* MOON */
+        100%; /* FLOOR */
+    
+    height: 100vh;
+}

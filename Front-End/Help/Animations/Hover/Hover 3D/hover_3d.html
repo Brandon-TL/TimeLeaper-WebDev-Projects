@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover 3D</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #222;
+        }
+
+        #poster {
+            height: 400px;
+            width: 600px;
+            transition: box-shadow .1s, transform .1s;
+            background: url(https://bit.ly/3ZbNdfW) no-repeat center;
+            background-size: cover;
+        }
+
+        #poster:hover {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+        }
+    </style>
+</head>
+<body>
+    <div id="poster"></div>
+    <script>
+        const el = document.getElementById('poster')
+        const height = el.clientHeight
+        const width = el.clientHeight
+
+        el.addEventListener('mousemove', (evt) => {
+            const {layerX, layerY} = evt
+
+            const yRotation = ((layerX - width / 2) / width) * 20
+            const xRotation = ((layerY - height / 2) / height) * 20
+
+            const string = `perspective(500px)
+                            scale(1.1) 
+                            rotateX(${xRotation}deg)
+                            rotateY(${yRotation}deg)`
+
+            el.style.transform = string
+        })
+
+        el.addEventListener('mouseout', () => {
+            el.style.transform = `perspective(500px)
+                                    scale(1)
+                                    rotateX(0)
+                                    rotateY(0)`
+        })
+    </script>
+</body>
+</html>

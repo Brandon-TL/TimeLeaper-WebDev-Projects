@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flexGrid.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Recogida de datos</h1>
+    <form>
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            Progreso del formulario: <progress max="100" value="0"> 0% </progress><br><br>
+
+            <div class="main">
+                    <label for="name">Nombre y apellidos:</label><input type="text" id="name">
+            </div><br>
+
+            <div class="main">
+                <label for="date">Fecha de nacimiento:</label><input type="date" id="date">
+            </div><br>
+
+            <div class="main">
+                <label for="tel">Teléfono:</label><input type="tel" id="tel">
+            </div><br>
+
+            <div class="main">
+                <label for="file">Fotografía reciente:</label><input type="file" id="file">
+            </div><br>
+
+            <div class="main">
+                <label for="email">Correo electrónico:</label><input type="email" id="email">
+            </div><br>
+
+            <div class="main">
+                <label for="password">Contraseña:</label><input type="password" id="password">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>MÉRITOS ACADÉMICOS</legend>
+            Progreso del formulario: <progress max="100" value="60"> 60% </progress>
+
+            <br><br><p>Señale la titulación más alta que posea</p><br>
+
+            <div class="radio">Enseñanza obligatoria / sin estudios<input type="radio" name="tit" id=""></div>
+            <div class="radio">Bachillerato / CC.FF. de grado medio de FP<input type="radio" name="tit" id=""></div>
+            <div class="radio">Estudios universitarios de primer ciclo / CC.FF. de grado superior<br> de FP<input type="radio" name="tit" id=""></div>
+            <div class="radio">Grado / Licenciatura universitaria<input type="radio" name="tit" id=""></div>
+            <div class="radio">Estudios de postgrado / mastér<input type="radio" name="tit" id=""></div>
+            <div class="radio">Doctorado<input type="radio" name="tit" id=""></div>
+
+            <br><p>Indique los títulos académicos que desee aportar a su ficha personal:</p><br>
+
+            <textarea rows="4"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>SECTORES EN LOS QUE DESEA TRABAJAR</legend>
+            Progreso del formulario: <progress max="100" value="80"> 80% </progress><br><br>
+
+            <div class="sectores">
+                <div>Educación<input type="checkbox" name="educacion" id="educacion"></div>
+                <div>Tecnológia<input type="checkbox" name="tecnologia" id="tecnologia"></div>
+                <div>Construcción<input type="checkbox" name="construccion" id="construccion"></div>
+                <div>Hostelería<input type="checkbox" name="hosteleria" id="hosteleria"></div>
+                <div>Industria<input type="checkbox" name="industria" id="industria"></div>
+                <div>Servicios al hogar<input type="checkbox" name="hogar" id="hogar"></div>
+            </div>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>OTROS ASPECTOS</legend>
+            Progreso del formulario: <progress max="100" value="90"> 90% </progress>
+
+            <br><br><label for="comunidad">Comunidad autónoma preferida para trabajar:</label>
+            <br>
+            <select id="comunidad">
+                <option selected disabled>Seleccione la comunidad autónoma</option>
+                <option value="valladolid">Valladolid</option>
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="Asturias">Asturias</option>
+            </select>
+
+        </fieldset>
+    </form>
+    <div class="btns">
+        <button onclick="javascript:window.print()">Imprimir <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAI1AAACNQBu2JXWQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHbSURBVEiJtZQ9aFRREIW/c+6KMYWd+IsRIYkhWmhjIwRBLC1MI0RBREu1UwsLEWInKgRLxcpKSCMIFoKViIJkRSIoEoVUimDWH1z3jUVeZJGw773oG5jmMjPfzNxzryKCOs1lgqR0UdKOlQAapQBwJPAPYLYqoNQEEHOGwarFKwBoB+yvEwAwKGlrnQAgHagVYKI2gIGFgIOS+moAaJvg+mJ8mqgCUNFLlpSEvwYaN7Ev4FAWndHShIjo6cCwcAADwCbhn5AmivL+5BcDfE74/dK0xpeEPwNb/gtAuGk82TVRQ6QnQg+XoCsGAHvy9Qx1na0CxoTbxjeAvp4N9rpky9OgMcF0oBGI7cC6v8I6wFuIl0LNDM1A50FEfFtWRZLWQDoq4iwwCryDaObJr0Hz8GsBaEEaEnEH+CS4H2gvxG7gi2AqI7vcvY7NxpPCH4U/CGfG10qobJfwnEiPgQ1AP/i8cMv4Vh6UDgu3hN9AOm58W3gGWF1KKbBRpGfC8+ALwIDxTeEXQBrPu70CNCCdEP4O7Cyr9RzSDz4t/Fw4hDNIJxF+ZTwFCNKxxeI+U6X4MrARYH1EgNA94VmRngqH8dUy+i7rAtaCTxmGM3w3ov2o+IMpb4Wf3b/ab6LnDTTyrMdIAAAAAElFTkSuQmCC"></button>
+        <button>Enviar</button>
+    </div><img src="../../../../Users/brand/Pictures/26558689.gif">
+</body>
+</html>

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.dp > input {
+    margin-top: 15px;
+}
+
+ul > li {
+    margin-top: 0px;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+.prog {
+    width: 100px;
+}

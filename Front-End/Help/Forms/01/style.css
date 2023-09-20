@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+td {
+    padding: 5px 5px 5px 0;
+}
+
+td[colspan="2"] {
+    text-align: center;
+}
+
+.estudios > li, .aficiones > li {
+    list-style: none;
+}
+

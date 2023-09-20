@@ -1,0 +1,121 @@
+body {
+    background: url(../IMG/settings-bg.png);
+}
+
+.blur {
+    position: fixed;
+    z-index: 4;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.blur .alert {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.6);
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blur .alert .text {
+    text-align: center;
+    padding: 10% 20% 0 20%;
+}
+
+.blur .alert .text button{
+    border-radius: 5px;
+    border: none;
+    padding: 0.5em 2em;
+    transition: 0.1s;
+}
+
+.blur .alert .text button:hover {
+    cursor: pointer;
+    padding: 1em 3em;
+    margin-top: -0.5em;
+}
+
+.blur .alert .warning {
+    color: white;
+    background: #313CA0;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.comments {
+    display: absolute;
+    margin-top: 7em;
+    width: 75%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments .comment {
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 3em;
+    width: 100%;
+    height: 100%;
+    width: 80%;
+}
+
+.comments .comment:nth-child(even) {
+    float: right;
+    text-align: right;
+}
+
+.comment:nth-child(odd) {
+    float: left;
+    text-align: left;
+    margin-right: 5em;
+}
+
+.comments .comment .user {
+    display: flex;
+    background: white;
+    padding: 0.75em 1.5em;
+    align-items: center;
+}
+
+.comments .comment .user .profile-pic img {
+    width: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.comments .comment .user .profile-pic {
+    display: inline-block;
+}
+
+.comments .comment .user .name {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.comments .comment .user .name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.comments .comment .user .date {
+    color: gray;
+    font-size: 15px;
+}
+
+.comments .comment .text {
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 0 10px gray inset;
+    z-index: 0;
+    padding: 1em;
+}

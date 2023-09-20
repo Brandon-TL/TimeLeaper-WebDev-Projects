@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iPhone13.css">
+    <title>iPhone 13 vs iPhone 13 Pro</title>
+</head>
+<body onLoad="preLoad()">
+    <header>    
+        <h1>iPhone 13</h1>
+    </header>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <picture>
+                    <source srcset="pic_pink_13.png" media="(max-width: 240px)">
+                    <img id="a" src="pink_13.png">
+                </picture>
+            </td>
+            <td>
+                <picture>
+                    <source srcset="pic_blue_13_pro.png" media="(max-width: 240px)">
+                    <img id="b" src="blue_13_pro.png">
+                </picture>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Choose your color</td>
+        </tr>
+        <tr>
+            <td>
+                <form autocomplete="off">
+                    <input type="radio" name="color" id="pink" onClick="im('a1');" checked>
+                    <input type="radio" name="color" id="white" onClick="im('a6');">
+                    <input type="radio" name="color" id="cyan" onClick="im('a7');">
+                    <input type="radio" name="color" id="red" onClick="im('a8');">
+                </form>
+            </td>
+            <td>
+                <form autocomplete="off">
+                    <input type="radio" name="color" id="blue" onClick="im('b2');" checked>
+                    <input type="radio" name="color" id="golden" onClick="im('b3');">
+                    <input type="radio" name="color" id="silver" onClick="im('b4');">
+                    <input type="radio" name="color" id="graphite" onClick="im('b5');">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                6,1″ o 5,4″<br>
+                OLED¹ Itegral screen
+            </td>
+            <td>
+                6,7″ o 6,1″<br>
+                OLED¹ Itegral screen with ProMotion
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="g" src="https://www.pngall.com/wp-content/uploads/7/5G-Logo-PNG-Image.png" alt="5G">
+                <br><br>Vertigo³ 5G networks
+            </td>
+            <td>
+                <img class="g" src="https://www.pngall.com/wp-content/uploads/7/5G-Logo-PNG-Image.png" alt="5G">
+                <br><br>Vertigo³ 5G networks
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Chipset A15 Bionic<br>
+                Faster than any other
+            </td>
+            <td>
+                Chipset A15 Bionic<br>
+                Fastest chipset on a smartphone
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Advance dual camera system<br>
+                Wide angle and ultra wide angle
+            </td>
+            <td>
+                Pro camera system<br>
+                Telephoto, wide angle and ultra wide angle
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Up to 19 hours of video playback⁴
+            </td>
+            <td>
+                Up to 28 hours of video playback⁴
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Compatibility with MagSafe accesories
+            </td>
+            <td>
+                Compatibility with MagSafe accesories
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+        function preLoad() {
+            a1 = new Image; a1.src = 'pink_13.png';
+            a6 = new Image; a6.src = 'white_13.png';
+            a7 = new Image; a7.src = 'cyan_13.png';
+            a8 = new Image; a8.src = 'red_13.png';
+            b2 = new Image; b2.src = 'blue_13_pro.png';
+            b3 = new Image; b3.src = 'golden_13_pro.png';
+            b4 = new Image; b4.src = 'silver_13_pro.png';
+            b5 = new Image; b5.src = 'graphite_13_pro.png';
+        }
+
+        function im(image) {
+          document.getElementById(image[0]).src = eval(image + ".src");
+        }
+    </script>
+</body>
+</html>

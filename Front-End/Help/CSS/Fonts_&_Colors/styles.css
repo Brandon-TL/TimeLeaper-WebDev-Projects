@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Backgrounds:
+    https://wallpapercave.com/wp/wp9585556.jpg
+    https://wallpapercave.com/wp/wp9649926.jpg
+    https://wallpapercave.com/wp/wp9649963.jpg
+    https://wallpapercave.com/wp/wp9650016.jpg
+*/
+
+body {
+    background: url(https://wallpapercave.com/wp/wp9650016.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    padding: 1rem;
+    top: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    z-index: 1;
+}
+
+h2 {
+    background: linear-gradient(to left, rgba(128, 128, 128, 0),
+                                        rgb(128, 128, 128),
+                                        rgb(128, 128, 128),
+                                        rgb(128, 128, 128),
+                                        rgba(128, 128, 128, 0));
+    padding: 1rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.5em;
+    z-index: 1;
+}
+
+h3 {
+    background: rgba(128, 128, 128, 0.5);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dmsp {
+    color: white;
+    width: 50%;
+    padding-top: 2rem;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.imgs {
+    display: flex;
+    width: 100%;
+    height: 31rem;
+    justify-content: space-between;
+}
+
+.imgs > .i {
+    text-align: center;
+    width: 30%;
+    height: 65%;
+}
+
+.i > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.color {
+    padding: 10px 20px 10px 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.red {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.7));
+    height: 100px;
+}
+
+.purple {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(128, 0, 128, 0.7));
+}
+
+.blue {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(0, 0, 255, 0.7));
+}
+
+.green {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(0, 128, 0, 0.7));
+}
+
+.yellow {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 255, 0, 0.7));
+}
+
+.orange {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 166, 0, 0.7));
+}
+
+.brown {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(165, 42, 42, 0.7));
+}
+
+.black {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(29, 29, 29, 0.7));
+}
+
+.white {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.7));
+}
+
+.fonts {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 0, 0, 0));
+    padding: 10px 20px 10px 10px;
+}
+
+ol > li {
+    margin-left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 200px;
+}

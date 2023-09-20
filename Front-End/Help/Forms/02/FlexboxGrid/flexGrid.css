@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 60em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+h1 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+fieldset > progress {
+    float: right;
+}
+
+.main > label {
+    width: max-content;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.main > input {
+    display: inline;
+    margin-left: 5px;
+    flex-grow: 2;
+}
+
+.btns {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    float: right;
+}
+
+textarea {
+    width: 100%;
+}
+
+.sectores {
+    width: 40%;
+    margin: auto;
+}
+
+button {
+    font-family: sans-serif;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:nth-of-type(1) {
+    padding-right: 40px;
+}
+
+button > img {
+    position: absolute;
+    height: 20px;
+}

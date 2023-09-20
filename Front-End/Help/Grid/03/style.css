@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.full {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 4px;
+    grid-template-areas:
+        "grafico"
+        "web"
+        "seo"
+        "marketing"
+        "clientes"
+        "trabajo";
+}
+
+.section {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 20px;
+    font-family: "Architects Daughter";
+    padding: 2.5rem;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section > h2 {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.section:hover {
+    font-size: 22.5px;
+    background-position: left;
+    cursor: pointer;
+}
+
+.trabajo {
+    grid-area: trabajo;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #23074d, #cc5333);
+    color: white;
+}
+
+.trabajo > p:nth-of-type(2) {
+    margin: auto;
+    width: 85%;
+    box-shadow: 10px 10px 10px #391770;
+}
+
+.trabajo > p > a {
+    display: block;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.web {
+    grid-area: web;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 192, 203, 0.6)),
+                        url("https://i.postimg.cc/KYq9CXsn/Getty-Images-1255905201-copy.jpg");
+    justify-content: flex-end;
+}
+
+.grafico {
+    grid-area: grafico;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.6), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+                        url("https://i.postimg.cc/wvsb8fN3/funciones-31-1616497780.webp");
+}
+
+.seo {
+    grid-area: seo;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.6), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+                        url("https://i.postimg.cc/xTXtNF8C/seo-begriffe-t.jpg");
+}
+
+.marketing {
+    grid-area: marketing;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.6), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+                        url("https://i.postimg.cc/y8pKyNzK/2-20.jpg");
+}
+
+.clientes {
+    grid-area: clientes;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 192, 203, 0.6)),
+                        url("https://i.postimg.cc/1RFpxgWW/portfolios.jpg");
+    justify-content: flex-end;
+}
+
+@media all and (min-width: 500px) {
+    .full {
+        grid-template-areas:
+            "grafico grafico"
+            "grafico grafico"
+            "web seo"
+            "web marketing"
+            "web trabajo"
+            "clientes trabajo";
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (min-width: 800px) {
+    .full {
+        grid-template-areas:
+            "grafico web seo"
+            "grafico web marketing"
+            "grafico web trabajo"
+            "grafico clientes trabajo"
+            "grafico clientes trabajo";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 2fr 1fr 1fr 2fr;
+    }
+}

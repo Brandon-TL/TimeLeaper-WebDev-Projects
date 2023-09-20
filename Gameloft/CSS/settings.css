@@ -1,0 +1,159 @@
+body {
+    background: url(../IMG/settings-bg.png);
+}
+
+.content {
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 1px 1px 10px black;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    margin-top: 7em;
+    left: 50%;
+    margin-left: -25%;
+}
+
+.sett {
+    position: absolute;
+    border: none;
+    background: #313CA0;
+    height: 100%;
+    width: 5em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 2px 0px 10px black;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.cover {
+    visibility: hidden;
+    position: absolute;
+    z-index: 0;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px black;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.sett .expand, .sett .contract {
+    text-align: center;
+    width: 1.5em;
+    font-size: 2em;
+    padding: 0.25em 0 0 0;
+    margin: 0.5em 0.5em;
+    border-radius: 50px;
+    display: none;
+}
+
+.sett .expand {display: block;}
+
+.sett .expand ion-icon, .sett .contract ion-icon {color: white;}
+
+.sett .expand:hover, .sett .contract:hover  {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.sett ul {
+    display: none;
+    list-style: none;
+    padding-top: 2em;
+}
+
+.sett ul li a {
+    color: white;
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.sett ul li a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+.selected {
+    color: black;
+    text-indent: 1em;
+    background: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    width: 105%;
+    border: solid 1px gray;
+}
+
+.arrow {display: none;}
+
+.selected .arrow {display: inline-block;}
+
+h3:nth-of-type(3) {
+    margin-top: 2em;
+}
+
+.ayuda {
+    display: inline-block;  
+    padding: 2em;
+    padding-left: 7em;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5em;
+}
+
+.ayuda form {
+    width: 60%;
+    margin: auto;
+}
+
+.ayuda textarea {
+    width: 100%;
+    display: block;
+    padding: 0.5em;
+}
+
+.webs {
+    text-align: center;
+    padding-top: 0.5em;
+    z-index: 1;
+    font-size: 3.5em;
+}
+
+.webs ion-icon {cursor: pointer;}
+
+.ayuda ul {
+    height: 7em;
+    padding-top: 1em;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.ayuda ul li {
+    margin: 0 0.5em;
+    display: inline;
+    width: 20%;
+}
+
+.ayuda ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 3em;
+}
+
+.ayuda ul a:hover {
+    transition: 0.3s;
+    color: white;
+    padding: 0.5em;
+    border-radius: 50px;
+    background: #313ca081;
+    font-size: 1.1em;
+}

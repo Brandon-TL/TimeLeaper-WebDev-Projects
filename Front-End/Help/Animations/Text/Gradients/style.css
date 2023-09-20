@@ -1,0 +1,43 @@
+body {
+    background: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 150px;
+    font-weight: 800;
+    letter-spacing: -.06em;
+    text-align: center;
+    margin: 0 0 16px;
+}
+
+span {
+    color: #fff;
+    display: block;
+    line-height: 1.3;
+    position: relative;
+}
+
+span::before {
+    background: linear-gradient(90deg, var(--start-color), var(--end-color));
+    content: var(--content);
+    position: absolute;
+    inset: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated 9s infinite;
+    animation-delay: var(--delay);
+}
+
+@keyframes animated {
+    0%, 16.667%, 100% {
+        opacity: 1;
+    }
+
+    33.333%, 83.333% {
+        opacity: 0;
+    }
+}

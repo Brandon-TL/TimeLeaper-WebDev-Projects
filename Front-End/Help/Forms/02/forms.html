@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+</head>
+<body>
+    <form action="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <label for="name">First name</label><input type="text" id="name" placeholder="Ej.: Antonio" required>
+            <br><br>
+                <label for="surname">Surname</label><input type="text" id="surname" placeholder="Ej.: Salazar Clavo" required>
+            <br><br>
+                <label for="e-mail">E-mail  </label><input type="email" id="e-mail" placeholder="Ej.: name@example.com" required>
+            <br><br>
+                <label for="gender">Gender  </label><input type="radio" id="male" name="gender" value="Male" required><label for="male">Male</label>
+                                                    <input type="radio" id="female" name="gender" value="Female" required><label for="female">Female</label>
+                                                    <input type="radio" id="n/a" name="gender" value="N/A" required><label for="n/a">I'd rather not say</label>
+            <br><br>
+                <label for="number">Phone Number </label><input type="text" name="prefix" id="prefix" list="prefix-list">
+                                                        <datalist id="prefix-list">
+                                                            <option value="+49">Alemania</option>
+                                                            <option value="+54">Argentina</option>
+                                                            <option value="+61">Australia</option>
+                                                            <option value="+43">Austria</option>
+                                                            <option value="+32">Bélgica</option>
+                                                            <option value="+359">Bulgaria</option>
+                                                            <option value="+1">Canadá</option>
+                                                            <option value="+57">Colombia</option>
+                                                            <option value="+385">Croacia</option>
+                                                            <option value="+421">Eslovaquia</option>
+                                                            <option value="+386">Eslovenia</option>
+                                                            <option value="+34">España</option>
+                                                            <option value="+1">Estados Unidos</option>
+                                                            <option value="+372">Estonia</option>
+                                                            <option value="+358">Finlandia</option>
+                                                            <option value="+33">Francia</option>
+                                                            <option value="+30">Grecia</option>
+                                                            <option value="+31">Holanda</option>
+                                                            <option value="+353">Irlanda</option>
+                                                            <option value="+354">Islandia</option>
+                                                            <option value="+39">Italia</option>
+                                                            <option value="+371">Letonia</option>
+                                                            <option value="+370">Lituania</option>
+                                                            <option value="+325">Luxemburgo</option>
+                                                            <option value="+356">Malta</option>
+                                                            <option value="+212">Marruecos</option>
+                                                            <option value="+52">México</option>
+                                                            <option value="+47">Noruega</option>
+                                                            <option value="+48">Polonia</option>
+                                                            <option value="+351">Portugal</option>
+                                                            <option value="+44">Reino Unido</option>
+                                                            <option value="+7">Rusia</option>
+                                                            <option value="+46">Suecia</option>
+                                                            <option value="+41">Suiza</option>
+                                                            <option value="+58">Venezuela</option>
+                                                        </datalist>
+                                                        <input type="text" id="e-mail" placeholder="Ej.: 123 45 67 89" required>
+            <br><br>
+                <label for="age">Age </label><input type="number" name="age" id="age" min="0" max="120" required>
+            <br><br>
+                <label for="fav_color">Favourite Color </label><input type="color" value="#fff" id="fav_color" required>
+            <br><br>
+                <input type="checkbox" id="IAgree" required><label for="IAgree">I've read and I agree the <a href="https://policies.google.com/terms?hl=en-US">privacy & terms of service</a>.</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

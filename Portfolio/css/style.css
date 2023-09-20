@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+ 
+/* WEB PRELOADER */
+.preloader-bg {
+    position: fixed;
+    z-index: 999999;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: 0.5s vanish linear;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+.preloader {
+    width: 250px;
+    opacity: 0;
+
+    animation: 1s signature linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        z-index: -999999;
+    }
+}
+
+@keyframes signature {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* HEADER */
+
+header {
+    height: max(8vh, 70px);
+    max-height: max(10vh, 100px);
+    width: 100%;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+}
+
+.header-container {
+    height: 100%;
+    width: max-content;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.header-container a {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.header-container a:hover {
+    opacity: 1;
+}
+
+.header-container div {
+    height: 70%;
+    width: 150px;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    color: black;
+}

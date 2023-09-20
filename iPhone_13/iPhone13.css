@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background: rgb(50,50,60);
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+header {
+    height: 5rem;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
+
+hr {
+    border-top: 1.5px solid rgba(0, 0, 0, 0.3);
+    width: 40rem;
+    margin: auto;
+}
+
+table {
+    text-align: center;
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    width: 15rem;
+}
+
+.g {
+    width: 5rem;
+}
+
+tr:nth-of-type(3) {
+    padding: 0;
+    height: 7rem;
+}
+
+td {
+    /* border: 1px solid white; */
+    padding: 1rem;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-clip: content-box;
+    border-radius: 50%;
+}
+
+input[id="golden"] {
+    background-color: rgb(255,215,0);
+}
+
+input[id="pink"] {
+    background-color: pink;
+}
+
+input[id="blue"] {
+    background-color: lightblue;
+}
+
+input[id="silver"] {
+    background-color: silver;
+}
+
+input[id="graphite"] {
+    background-color: gray;
+}
+
+input[id="white"] {
+    background-color: white;
+}
+
+input[id="cyan"] {
+    background-color: darkcyan;
+}
+
+input[id="red"] {
+    background-color: red;
+}
+
+input[type="radio"]:hover {
+    transition: 0.5s;
+    width: 40px;
+    height: 40px;
+}
+
+input[name="color"]:focus-within {
+    transition: 0.5s;
+    width: 50px;
+    height: 50px;
+}
