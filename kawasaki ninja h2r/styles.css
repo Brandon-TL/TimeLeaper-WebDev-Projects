@@ -7,6 +7,8 @@
 body {
     height: 100vh;
     width: 100%;
+    background-color: #000;
+    font-family: "ROBOTO", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -14,68 +16,55 @@ body::-webkit-scrollbar {
 }
 
 .home-landing {
-    background-color: #212223;
-    background-image: 
-        radial-gradient(
-            circle,
-            transparent 1rem,
-            #212223 1rem),
-        linear-gradient(
-            teal .5rem,
-            transparent .5rem),
-        linear-gradient(
-            90deg,
-            teal .5rem,
-            transparent .5rem);
-    background-size: 5rem 5rem;
-    background-position: 2.75rem 2.75rem, 0 0, 0 0;
+    height: 100%;
+    width: 100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/039/502/596/large/punit-padhiyar-black6.jpg?1626105561');
 }
 
 h1 {
-    width: 50%;
-    height: 100%;
+    color: #fff;
     position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 9vw;
     display: flex;
     flex-direction: column;
+    font-family: "Josefin Sans", sans-serif;
     text-align: center;
-    justify-content: center;
-    color: #fff;
-    font-family: sans-serif;
     text-transform: uppercase;
     user-select: none;
+    transition: all 0.5s ease;
 }
 
-.h2r-png {
-    height: 100%;
-    background-size: 80rem;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-image: url('img/h2r-1.png');
+.first-word {
+    font-size: 3vw;
+    transition: all 0.3s ease;
 }
 
-header {
-    position: sticky;
-    top: 0;
+h1 .h2r {
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 8vw;
+    color: rgba(255, 255, 255, 0.02);
+    transition: all 0.5s ease;
 }
 
+h1:hover .ninja  {
+    transform: translateY(3vw);
+}
 
+h1:hover .kawasaki  {
+    transform: translateY(-3vw);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+h1:hover .h2r {
+    color: #ffffffe5;
+}
 
 
 
@@ -108,6 +97,22 @@ header {
 
 
 /* 
+
+.h2r-png {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: 80rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url('img/h2r-1.png');
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
 nav {
     margin-top: 10%;
     background: linear-gradient(to left, rgba(128, 122, 122, 0), gray, rgba(255, 255, 255, 0));
