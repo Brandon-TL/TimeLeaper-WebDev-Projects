@@ -1,38 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
 * {
     margin: 0;
-    box-sizing: border-box;
     padding: 0;
-}
-
-html {
-    height: 100%;
-    background: #202020;
+    box-sizing: border-box;
 }
 
 body {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 60px;
-    background: black;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.welcome {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black), url(https://images4.alphacoders.com/108/thumb-1920-1084315.jpg);
-    background-size: cover;
-    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.title {
-    margin-bottom: 30%;
-    color: black;
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.home-landing {
+    height: 100%;
+    background-color: #943333;
+}
+
+.h2r-png {
+    background-image: url('img/h2r-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #fff;
+    word-wrap: wrap;
+    text-align: center;
+    user-select: none;
+    font-size: 10rem;
+    font-family: 'Gloock', serif;
 }
 
 header {
