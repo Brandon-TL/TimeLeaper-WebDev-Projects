@@ -4,34 +4,56 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-    background: #202020;
-}
-
 body {
-    min-height: 100%;
+    height: 100vh;
+    width: 100%;
     position: relative;
     padding-bottom: 60px;
     background: black;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.welcome {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black), url(https://images4.alphacoders.com/108/thumb-1920-1084315.jpg);
-    background-size: cover;
+body::-webkit-scrollbar {display: none;}
+
+.landing-home {
+    height: 100%;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, black), 
+                url('./img/landing-bg.jpg');
 }
 
-.title {
+.landing-home span {
+    color: white;
+    display: flex;
+    width: min-content;
+    position: relative;
+    top: 20vh;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 7vw;
+    font-family: 'ROBOTO', sans-serif;
+    user-select: none;
+}
+
+.landing-home .tesla-png {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: url('./img/landing-bg.png');
+}
+
+.landing-home .title {
     margin-bottom: 30%;
     color: black;
-    font-size: 50px;
+    font-size: 50vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
