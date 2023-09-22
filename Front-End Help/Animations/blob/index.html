@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blob Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(450.2265895858492 312.1119697931105)">
+                <path id="blob1"
+                    d="M159.7 -160C204.4 -115 236.2 -57.5 237.4 1.2C238.5 59.9 209.1 119.7 164.4 136.6C119.7 153.5 59.9 127.4 1.6 125.7C-56.6 124.1 -113.1 146.9 -145.3 130C-177.5 113.1 -185.2 56.6 -171.2 14C-157.2 -28.5 -121.4 -57 -89.2 -102C-57 -147 -28.5 -208.5 14.5 -223C57.5 -237.5 115 -205 159.7 -160"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(450.1640611267908 278.4724317171754)" style="visibility: hidden;">
+                <path id="blob2"
+                    d="M137.9 -143.1C177.7 -98.1 208.4 -49 199.5 -8.8C190.7 31.3 142.4 62.7 102.5 104C62.7 145.4 31.3 196.7 -14 210.7C-59.4 224.7 -118.8 201.5 -135.7 160.1C-152.5 118.8 -126.9 59.4 -124.3 2.6C-121.7 -54.2 -142.2 -108.4 -125.3 -153.4C-108.4 -198.4 -54.2 -234.2 -2.6 -231.6C49 -229 98.1 -188.1 137.9 -143.1"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script>
+        const tween1 = KUTE.to(
+            '#blob1',
+            { path: '#blob2' },
+            { repeat: 999, duration: 3000, yoyo: true }
+        ).start();
+    </script>
+</body>
+
+</html>
