@@ -1,111 +1,38 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background: #202020;
 }
 
 body {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px;
+    background: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcome {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), black), url(https://images4.alphacoders.com/108/thumb-1920-1084315.jpg);
+    background-size: cover;
+    width: 100%;
     height: 100vh;
-    width: 100%;
-    background-color: #000;
-    font-family: "ROBOTO", sans-serif;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
-.home-landing {
-    height: 100%;
-    width: 100%;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('https://cdna.artstation.com/p/assets/images/images/039/502/596/large/punit-padhiyar-black6.jpg?1626105561');
-}
-
-h1 {
-    color: #fff;
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 9vw;
     display: flex;
-    flex-direction: column;
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    user-select: none;
-    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
 }
 
-.first-word {
-    font-size: 3vw;
-    transition: all 0.3s ease;
-}
-
-h1 .h2r {
-    position: absolute;
-    transform: translateY(-50%) translateX(-50%);
-    top: 50%;
-    left: 50%;
-    font-size: 8vw;
-    color: rgba(255, 255, 255, 0.02);
-    transition: all 0.5s ease;
-}
-
-h1:hover .ninja  {
-    transform: translateY(3vw);
-}
-
-h1:hover .kawasaki  {
-    transform: translateY(-3vw);
-}
-
-h1:hover .h2r {
-    color: #ffffffe5;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.h2r-png {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-size: 80rem;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-image: url('img/h2r-1.png');
+.title {
+    margin-bottom: 30%;
+    color: black;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -232,4 +159,4 @@ footer > div > a:hover {
 .tesla:hover {
     color: white;
     text-decoration: underline;
-} */
+}
