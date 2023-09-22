@@ -26,6 +26,7 @@ span::before {
     content: var(--content);
     position: absolute;
     inset: 0;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animated 9s infinite;
