@@ -13,21 +13,22 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.hexagon {
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-
-
-
-
 .home-landing {
-    height: 100%;
-    background-image:
-        linear-gradient(rgb(0, 211, 0) 50%, black 50%);
+    background-color: #212223;
+    background-image: 
+        radial-gradient(
+            circle,
+            transparent 1rem,
+            #212223 1rem),
+        linear-gradient(
+            teal .5rem,
+            transparent .5rem),
+        linear-gradient(
+            90deg,
+            teal .5rem,
+            transparent .5rem);
+    background-size: 5rem 5rem;
+    background-position: 2.75rem 2.75rem, 0 0, 0 0;
 }
 
 h1 {
