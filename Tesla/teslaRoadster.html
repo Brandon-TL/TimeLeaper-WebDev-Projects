@@ -8,9 +8,9 @@
     <title>Tesla roadster</title>
 </head>
 <body>
-    <section class="section landing-home">
+    <div class="landing-home">
         <div class="title">
-            <div class="name"><span>Tesla</span> <span>Roadster</span></div>
+            <h1 class="name"><span>Tesla</span> <span>Roadster</span><h1/>
             <div class="slogan">
                 <span style="--delay:.1s;">Made</span> 
                 <span style="--delay:.15s;">to</span> 
@@ -23,56 +23,88 @@
                 <span style="--delay:.5s;">energy.</span>
             </div>
         </div>
-        <a href="#section1" class="arrow-down">🡳</a>
-    </section>
-    <section class="section" id="section1">
+        <a href="#sectionSpecs" class="arrow-down">🡳</a>
+    </div>
+    <main>
         <header>
             <nav>
-                <a href="#">ESPECIFICACIONES</a>
-                <a href="#">FABRICACIÓN</a>
-                <a href="#">MODELOS</a>
-                <a href="#">CONTACTO</a>
+                <a href="#sectionSpecs">ESPECIFICACIONES</a>
+                <a href="#sectionFabric">FABRICACIÓN</a>
+                <a href="#sectionModels">MODELOS</a>
+                <a href="#sectionContac">CONTACTO</a>
             </nav>
         </header>
+        <section class="section" id="sectionSpecs">
+            <h2>El coche más rápido del mundo, con el récord de aceleración, autonomía y rendimiento.</h2>
+            <table class="specs">
+                <tr>
+                    <td>Aceleración 0-100 km/h</td>
+                    <td>1 segundo/s</td>
+                </tr>
+                <tr>
+                    <td>Aceleración 1/4 milla</td>
+                    <td>8,8 segundos</td>
+                </tr>
+                <tr>
+                    <td>Velocidad máxima</td>
+                    <td>Más de 400 km/h</td>
+                </tr>
+                <tr>
+                    <td>Par</td>
+                    <td>10.000 Nm</td>
+                </tr>
+                <tr>
+                    <td>Autonomía</td>
+                    <td>1000 kilómetros</td>
+                </tr>
+                <tr>
+                    <td>Plazas</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Tracción</td>
+                    <td>Tracción a las cuatro ruedas</td>
+                </tr>
+                <tr>
+                    <td>Reserva básica</td>
+                    <td>43.000 €</td>
+                </tr>
+                <tr>
+                    <td>Reserva de Founders Series</td>
+                    <td>215.000 €</td>
+                </tr>
+            </table>
+        </section>
+        <section class="section" id="sectionFabric">
+            <div style="text-align: left; font-size: 40px;">
+                Diseño que maximiza el rendimiento y la eficacia aerodinámica.
+            </div>
+            <div style="text-align: right; font-size: 20px;">
+                Un supercoche totalmente eléctrico, el Roadster maximiza el potencial de la ingeniería aerodinámica y ofrece un rendimiento y eficiencia inigualables.
+            </div>
+        </section>
+        <section class="section" id="sectionModels">
+            <div style="text-align: left; font-size: 40px;">
+                Diseño que maximiza el rendimiento y la eficacia aerodinámica.
+            </div>
+            <div style="text-align: right; font-size: 20px;">
+                Un supercoche totalmente eléctrico, el Roadster maximiza el potencial de la ingeniería aerodinámica y ofrece un rendimiento y eficiencia inigualables.
+            </div>
+        </section>
+        <section class="section" id="sectionContac">
+            <div style="text-align: left; font-size: 40px;">
+                Diseño que maximiza el rendimiento y la eficacia aerodinámica.
+            </div>
+            <div style="text-align: right; font-size: 20px;">
+                Un supercoche totalmente eléctrico, el Roadster maximiza el potencial de la ingeniería aerodinámica y ofrece un rendimiento y eficiencia inigualables.
+            </div>
+        </section>
         <footer>
            <div class="copyright">
-               <a href="https://www.tesla.com/es_es">Tesla © 2021</a>&emsp;&emsp;&emsp;
-               © Copyright 2021-<script>let year = new Date().getFullYear();document.write(year);</script> - <a href="https://www.instagram.com/_time_leaper_/">Time Leaper</a> - All rights reserved
+                <a href="https://www.instagram.com/_time_leaper_/">Time Leaper</a>
+                Copyright 21-<script>let year = new Date().getFullYear().toString().slice(-2);document.write(year);</script> All rights reserved
            </div>
        </footer>
-    </section>
-    <!-- <div class="content">
-        <picture>
-            <source media="(min-width: 1400px)"
-                    srcset="https://electrodrivemoscow.ru/img/ni-2.png">
-            <source media="(min-width: 1200px)"
-                    srcset="https://olmaks.ua/wp-content/uploads/2019/05/tesla-roadster1.png">
-            <source media="(min-width: 800px)"
-                    srcset="https://mychiptuningfiles.com/es/image/models/YEdPJDTEJGtIpmJUdcezezZIfZtG5p.png">
-            <img alt="roadster">
-        </picture>
-        <div>
-            El coche más rápido del mundo, con el récord de aceleración, autonomía y rendimiento.
-        </div>
-        <div class="specs">
-            <div class="left">Aceleración 0-100 km/h</div>      <div class="right">1 segundos</div><hr>
-            <div class="left">Aceleración 1/4 milla</div>       <div class="right">8,8 segundos</div><hr>
-            <div class="left">Velocidad máxima</div>            <div class="right">Más de 400 km/h</div><hr>
-            <div class="left">Par</div>                         <div class="right">10.000 Nm</div><hr>
-            <div class="left">Autonomía</div>                   <div class="right">1000 kilómetros</div><hr>
-            <div class="left">Plazas</div>                      <div class="right">4</div><hr>
-            <div class="left">Tracción</div>                    <div class="right">Tracción a las cuatro ruedas</div><hr>
-            <div class="left">Reserva básica</div>              <div class="right">43.000 €</div><hr>
-            <div class="left">Reserva de Founders Series</div>  <div class="right">215.000 €</div>
-        </div>
-    </div> -->
-    <!-- <div class="full">
-        <div style="text-align: left; font-size: 40px;">
-            Diseño que maximiza el rendimiento y la eficacia aerodinámica.
-        </div>
-        <div style="text-align: right; font-size: 20px;">
-            Un supercoche totalmente eléctrico, el Roadster maximiza el potencial de la ingeniería aerodinámica y ofrece un rendimiento y eficiencia inigualables.
-        </div>
-    </div> -->
+    </main>
 </body>
 </html>
