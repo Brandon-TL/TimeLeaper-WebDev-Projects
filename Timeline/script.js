@@ -61,5 +61,8 @@ function changeBg (src) {
 
 // Flash component's year at the background when animates in (not finished)
 function flashYear(year) {
-  
+	const container = document.querySelector(".flash-container");
+
+	container.innerHTML = "";
+	container.insertAdjacentHTML("beforeend", `<div class="flash">${year}</div>`);
 } 

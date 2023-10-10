@@ -1,115 +1,138 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
+@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 :root {
-    --gap_spacer: 1rem;
+	--gap_spacer: 1rem;
 }
 
-/* I prefer no to see the scrollbar, but no recomendable to hide it */
 ::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 
 body {
-    background-color: #000000;  
-    position: relative;
-    height: 100vh;
-    overflow-x: hidden;
+	background-color: #000000;
+	position: relative;
+	height: 100vh;
+	overflow-x: hidden;
 }
 
 .wrapper {
-    color: #fff;
+	z-index: 3;
+	color: #fff;
 
-    position: absolute;
-    z-index: 2;
-    height: 100vh;
-    
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 25vw;
-    padding-right: 15vw;
+	position: absolute;
+	z-index: 10;
+	height: 100vh;
+
+	display: flex;
+	flex-wrap: nowrap;
+	padding-left: 25vw;
+	padding-right: 15vw;
 }
 
 .duppled-bg {
-    z-index: 1;
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all .2s ease-in-out;
-    filter: blur(5px) invert(0) brightness(.2);
+	z-index: 1;
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.2s ease-in-out;
+	filter: blur(5px) invert(0) brightness(0.2);
+}
+
+.flash-container {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flash {
+	color: transparent;
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+
+	transform: scaleY(1.3);
+	font-size: 45vw;
+	font-weight: 700;
+	font-family: sans-serif;
 }
 
 .container {
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 5vh;
-    height: 100%;
-    width: 50vw;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 5vh;
+	height: 100%;
+	width: 50vw;
 }
 
 .component {
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-    filter: blur(10px) brightness(.6) opacity(.7);
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+	filter: blur(10px) brightness(0.6) opacity(0.7);
+	text-shadow: 0 0 5px #000;
 }
 
 .img-component {
-    position: relative;
-    margin-bottom: 5%;
+	position: relative;
+	margin-bottom: 5%;
 }
 
 .img-component img {
-    display: block;
-    inline-size: 80%;
-    margin: auto;
-    aspect-ratio: 16/9;
-    object-fit: cover;
+	display: block;
+	inline-size: 80%;
+	margin: auto;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 0 20px #000;
 }
 
 .img-component .img-year {
-    position: absolute;
-    font-size: 100px;
-    font-weight: 800;
-    bottom: 0;
-    left: 50%;
-    translate: -50% 40%;
-    text-shadow: 0px 0px 20px rgba(0,0,0,.5);
+	position: absolute;
+	font-size: 100px;
+	font-weight: 800;
+	bottom: 0;
+	left: 50%;
+	translate: -50% 40%;
 }
 
 /* Only for h2 titles */
 .desc-component * :is(h2) {
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-family: 'Pathway Gothic One', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-family: "Pathway Gothic One", sans-serif;
 }
 
 /* All but h2 titles */
 .desc-component * :not(h2) {
-    opacity: 0;
-    transition: all .3s;
-    font-size: larger;
+	opacity: 0;
+	transition: all 0.3s;
+	font-size: larger;
 }
 
 /* Only for h3 INTERNATIONAL titles */
 .int-tooltip .desc-title {
-    padding: 30px 0 10px;
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Pathway Gothic One', sans-serif;
+	padding: 30px 0 10px;
+	font-size: 25px;
+	text-align: center;
+	font-family: "Pathway Gothic One", sans-serif;
 }
 
 /* All but h2 titles when active*/
 .active .desc-component * :not(h2) {
-    opacity: 1;
+	opacity: 1;
 }
