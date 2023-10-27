@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Languages</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="code.jquery.com_jquery-3.7.1.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Learning Languages</title>
 </head>
 <body>
     <header>
-        <form>
-            <label class="switch ml-auto">
-                <input type="checkbox" id="theme-checkbox">
-                <span class="theme-indicator ml-40" id="theme-indicator"></span>
-                <span class="moon"><ion-icon name="moon"></ion-icon></span>
-                <span class="sun"><ion-icon name="sunny"></ion-icon></span>
-            </label>
-        </form>
+        <button id="theme-toggle" title="Toggle light / dark theme">
+            <div class="moon"><ion-icon name="moon"></ion-icon></div>
+            <div class="sun"><ion-icon name="sunny"></ion-icon></div>
+        </button>
     </header>
-    <script src="script.js"></script>
+    <script defer type="module" src="./scripts/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        /* -- BODY MAIN COLORS -- */
+
+        --body-bg-color: #eee;
+        --body-text-color: #000;
+
+        /* -- THEME SWITCH BUTTON --  */
+
+        --theme-button-bg-color: #b8b8b8;
+        --theme-button-text-color: #333;
+    }
+}
+
+html[data-theme="light"] {
+    /* -- BODY MAIN COLORS -- */
+
+    --body-bg-color: #eee;
+    --body-text-color: #000;
+
+    /* -- THEME SWITCH BUTTON --  */
+
+    --theme-button-bg-color: #c7c7c7;
+    --theme-button-text-color: #333;
+}

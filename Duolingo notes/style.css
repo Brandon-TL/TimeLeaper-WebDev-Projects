@@ -1,72 +1,77 @@
-/* Importing fonts and css files */
+/* -- IMPORT FONTS AND THEME FILES -- */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
-@import url('css/theme_switch.css');
-@import url('css/lang_selector.css');
+@import url('css/light_theme.css');
+@import url('css/dark_theme.css');
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --body-bg-color: #eee;
-        --header-border-color: rgba(0, 0, 0, 0.1);
-        /* -- Theme switch button colors --  */
-        --label-switch-bg-color: #808080;
-        --span-moon-color: #ffffff60;
-        --span-sun-color: #fff;
-        --theme-indicator-bg-color: #ffffff70;
-        --theme-indicator-border-color: #808080;
-    }
-}
+/* -- GENERAL CSS RESETS -- */
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --body-bg-color: #111;
-        --header-border-color: rgba(255, 255, 255, 0.1);
-        /* -- Theme switch button colors --  */
-        --label-switch-bg-color: #202020;
-        --span-moon-color: #fff;
-        --span-sun-color: #ffffff40;
-        --theme-indicator-bg-color: #ffffff30;
-        --theme-indicator-border-color: #202020;
-    }
-}
-
-/*  */
 * {
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-}
-
-html {
-    width: 100%;
-    height: 100svh;
 }
 
 body {
     background-color: var(--body-bg-color);
-    color: #fff;
+    color: var(--body-text-color);
     overflow: hidden;
 }
 
+/* -- HEADER -- */
+
 header {
-    width: 90%;
-    height: 80px;
-    display: flex;
-    border-bottom: 1px solid var(--header-border-color);
-    margin: auto;
-}
+    background-color: var(--body-bg-color);
+    box-shadow: 0 0 2em 3em var(--body-bg-color);
 
-header form {
     display: flex;
-    height: 100%;
-    width: 100%;
     align-items: center;
-    justify-content: space-around;
+    position: relative;
+    height: 5em;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3em;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    
+    /* -- THEME TOGGLE BUTTON -- */
+
+    & button {
+        background-color: var(--theme-button-bg-color);
+        color: var(--theme-button-text-color);
+        height: 3em;
+        width: 3em;
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 0 3em;
+        border-radius: 3em;
+        border: none;
+        cursor: pointer;
+
+        & .sun, & .moon {
+            display: none;
+            font-size: 2em;
+        }
+
+        & .disp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
-.ml-auto {
-    margin-left: auto;
+/* &::-webkit-scrollbar {
+    background: transparent;
+    width: 1em;
 }
 
-.ml-40 {
-    margin-left: 40px;
-}
+&::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: #fff;
+    cursor: pointer;
+} */
