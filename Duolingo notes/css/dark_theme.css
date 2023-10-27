@@ -7,8 +7,8 @@
         --body-text-color: #fff;
         
         /* -- THEME SWITCH BUTTON --  */
-        --theme-button-bg-color: #333;
-        --theme-button-text-color: #b8b8b8;
+        --theme-button-bg-color: #222;
+        --theme-button-icon-color: #fff;
     }
 }
 
@@ -20,6 +20,6 @@ html[data-theme="dark"] {
     --body-text-color: #fff;
     
     /* -- THEME SWITCH BUTTON --  */
-    --theme-button-bg-color: #333;
-    --theme-button-text-color: #b8b8b8;
+    --theme-button-bg-color: #222;
+    --theme-button-icon-color: #fff;
 }

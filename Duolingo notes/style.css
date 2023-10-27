@@ -26,52 +26,156 @@ header {
     box-shadow: 0 0 2em 3em var(--body-bg-color);
 
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     position: relative;
     height: 5em;
     width: 100%;
-    margin: auto;
+    padding: 1em;
     margin-bottom: 3em;
 
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
+    & .primary-container {
+        background-color: rgba(0, 255, 255, 0.13);
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
     
-    /* -- THEME TOGGLE BUTTON -- */
+    & .secondary-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
-    & button {
-        background-color: var(--theme-button-bg-color);
-        color: var(--theme-button-text-color);
+/* -- MAIN DROPDOWN CONTAINER -- */
+
+.secondary-container .select-wrapper {
+    color: #fff;
+    border-radius: 0.5em;
+    min-width: 17em;
+
+    & .select-btn, & .options li {
+        display: flex;
+        align-items: center;
         height: 3em;
-        width: 3em;
-        display: block;
-        position: absolute;
-        right: 0;
-        margin: 0 3em;
-        border-radius: 3em;
-        border: none;
         cursor: pointer;
+    }
 
-        & .sun, & .moon {
-            display: none;
-            font-size: 2em;
+    & .select-btn { /* -- Select button -- */
+        background-color: var(--theme-button-bg-color);
+        justify-content: space-between;
+        padding: 0 1em;
+        border-radius: 0.5em;
+        font-size: 1em;
+
+        &:hover {
+            background-color: #3a3a3a;
         }
 
-        & .disp {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        & ion-icon {
+            font-size: 1.35em;
+            transition: transform 0.2s linear;
+        }
+    }
+    
+    &.active .select-btn {
+        background-color: #3a3a3a;
+
+        & ion-icon {
+            transform: rotate(-180deg);
+        }
+    }
+    
+    &.active .content {
+        display: block;
+    }
+
+    & .content { /* -- Dropdown container -- */
+        background-color: #3a3a3a;
+        display: none;
+        margin-top: 0.5em;
+        padding: 0.75em;
+        border-radius: 0.5em;
+
+        & .search { /* -- Search input -- */
+            position: relative;
+
+            & ion-icon {
+                color: #8a8a8a;
+                pointer-events: none;
+                position: absolute;
+                inset: 1em;
+                line-height: 3em;
+            }
+
+            & input {
+                height: 3em;
+                outline: none;
+                font-size: 1em;
+                padding-left: 2.5em;
+                border-radius: 0.5em;
+                border: 1px solid #b3b3b3;
+            }
+        }
+
+        & .options { /* -- Dropdown options container -- */
+            margin-top: 1em;
+            max-height: 12em;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: #2e2e2e;
+                border-radius: 25px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #5e5e5e;
+                border-radius: 25px;
+            }
+
+            & li {
+                font-size: 1em;
+                padding-left: 1em; 
+                border-radius: 0.5em;
+
+                &:hover {
+                    background-color: #4c4c4c;
+                }
+            }
         }
     }
 }
 
-/* &::-webkit-scrollbar {
-    background: transparent;
-    width: 1em;
-}
+/* -- THEME TOGGLE BUTTON -- */
 
-&::-webkit-scrollbar-thumb {
-    border-radius: 1em;
-    background-color: #fff;
+.secondary-container button {
+    background-color: var(--theme-button-bg-color);
+    color: var(--theme-button-icon-color);
+    height: 3.5em;
+    width: 3.5em;
+    display: block;
+    margin-left: 1em;
+    border-radius: 3em;
+    border: none;
     cursor: pointer;
-} */
+
+    & .sun, & .moon {
+        display: none;
+        font-size: 2em;
+    }
+
+    & .disp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

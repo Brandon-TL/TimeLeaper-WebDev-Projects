@@ -12,15 +12,35 @@
 </head>
 <body>
     <header>
-        
-        <button id="theme-toggle" title="Toggle light / dark theme">
-            <div class="moon"><ion-icon name="moon"></ion-icon></div>
-            <div class="sun"><ion-icon name="sunny"></ion-icon></div>
-        </button>
+        <div class="primary-container">
+            <div>TAB</div>
+            <div>TAB</div>
+            <div>TAB</div>
+        </div>
+        <div class="secondary-container">
+            <div class="select-wrapper">
+                <div class="select-btn">
+                    <span>Select a country</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </div>
+                <div class="content">
+                    <div class="search">
+                        <ion-icon name="search"></ion-icon>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <ul class="options"></ul>
+                </div>
+            </div>
+            <button id="theme-toggle" title="Toggle light / dark theme">
+                <div class="moon"><ion-icon name="moon"></ion-icon></div>
+                <div class="sun"><ion-icon name="sunny"></ion-icon></div>
+            </button>
+        </div>
     </header>
-    <script defer type="module" src="./scripts/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script defer src="./scripts/toggle-theme.js"></script>
+    <script defer src="./scripts/lang-select.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-export const storageKey = 'theme-preference';
+const storageKey = 'theme-preference';
 
 const onClick = () => {
     theme.value = theme.value === 'light' ? 'dark' : 'light';
