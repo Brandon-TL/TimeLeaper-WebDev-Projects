@@ -1,25 +1,25 @@
+/* -- USER THEME COLOR PREFERENCES -- */
+
 @media (prefers-color-scheme: dark) {
     :root {
         /* -- BODY MAIN COLORS -- */
-
         --body-bg-color: #111;
         --body-text-color: #fff;
         
         /* -- THEME SWITCH BUTTON --  */
-
         --theme-button-bg-color: #333;
         --theme-button-text-color: #b8b8b8;
     }
 }
 
+/* -- DARK THEME COLORS SWITCH  -- */
+
 html[data-theme="dark"] {
     /* -- BODY MAIN COLORS -- */
-
     --body-bg-color: #111;
     --body-text-color: #fff;
     
     /* -- THEME SWITCH BUTTON --  */
-
     --theme-button-bg-color: #333;
     --theme-button-text-color: #b8b8b8;
 }
