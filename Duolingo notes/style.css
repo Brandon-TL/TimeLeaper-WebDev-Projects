@@ -14,16 +14,16 @@
 }
 
 body {
-    background-color: var(--body-bg-color);
-    color: var(--body-text-color);
+    background-color: var(--body-bg);
+    color: var(--body-text);
     overflow: hidden;
 }
 
 /* -- HEADER -- */
 
 header {
-    background-color: var(--body-bg-color);
-    box-shadow: 0 0 2em 3em var(--body-bg-color);
+    background-color: var(--body-bg);
+    box-shadow: 0 0 2em 3em var(--body-bg);
 
     display: flex;
     justify-content: space-around;
@@ -38,8 +38,6 @@ header {
     top: 0;
 
     & .primary-container {
-        background-color: rgba(0, 255, 255, 0.13);
-        width: 20%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -52,7 +50,7 @@ header {
     }
 }
 
-/* -- MAIN DROPDOWN CONTAINER -- */
+/* -- SELECT LANG DROPDOWN CONTAINER -- */
 
 .secondary-container .select-wrapper {
     color: #fff;
@@ -67,24 +65,26 @@ header {
     }
 
     & .select-btn { /* -- Select button -- */
-        background-color: var(--theme-button-bg-color);
+        background-color: var(--header-button-bg);
+        color: var(--header-button-text);
         justify-content: space-between;
         padding: 0 1em;
         border-radius: 0.5em;
         font-size: 1em;
 
         &:hover {
-            background-color: #3a3a3a;
+            background-color: var(--header-dropdown-bg);
         }
 
         & ion-icon {
+            color: var(--header-button-icon);
             font-size: 1.35em;
             transition: transform 0.2s linear;
         }
     }
     
     &.active .select-btn {
-        background-color: #3a3a3a;
+        background-color: var(--header-dropdown-bg);
 
         & ion-icon {
             transform: rotate(-180deg);
@@ -96,7 +96,8 @@ header {
     }
 
     & .content { /* -- Dropdown container -- */
-        background-color: #3a3a3a;
+        background-color: var(--header-dropdown-bg);
+        color: var(--header-button-text);
         display: none;
         margin-top: 0.5em;
         padding: 0.75em;
@@ -106,7 +107,7 @@ header {
             position: relative;
 
             & ion-icon {
-                color: #8a8a8a;
+                color: var(--header-button-alt-icon);
                 pointer-events: none;
                 position: absolute;
                 inset: 1em;
@@ -115,11 +116,12 @@ header {
 
             & input {
                 height: 3em;
+                width: 100%;
                 outline: none;
                 font-size: 1em;
                 padding-left: 2.5em;
                 border-radius: 0.5em;
-                border: 1px solid #b3b3b3;
+                border: 1px solid var(--header-input-border);
             }
         }
 
@@ -127,18 +129,19 @@ header {
             margin-top: 1em;
             max-height: 12em;
             overflow-y: auto;
+            padding-right: 0.5em;
 
             &::-webkit-scrollbar {
                 width: 7px;
             }
 
             &::-webkit-scrollbar-track {
-                background-color: #2e2e2e;
+                background-color: var(--header-scrollbar-bg);
                 border-radius: 25px;
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: #5e5e5e;
+                background-color: var(--header-scrollbar-thumb);
                 border-radius: 25px;
             }
 
@@ -147,8 +150,12 @@ header {
                 padding-left: 1em; 
                 border-radius: 0.5em;
 
+                &.selected {
+                    background-color: var(--header-active-li);
+                }
+
                 &:hover {
-                    background-color: #4c4c4c;
+                    background-color: var(--header-hover-li);
                 }
             }
         }
@@ -158,8 +165,8 @@ header {
 /* -- THEME TOGGLE BUTTON -- */
 
 .secondary-container button {
-    background-color: var(--theme-button-bg-color);
-    color: var(--theme-button-icon-color);
+    background-color: var(--header-button-bg);
+    color: var(--header-button-icon);
     height: 3.5em;
     width: 3.5em;
     display: block;
@@ -178,4 +185,11 @@ header {
         align-items: center;
         justify-content: center;
     }
+}
+
+/* -- TABS CONTAINER -- */
+
+.primary-container {
+    background-color: rgb(0, 102, 255);
+    width: 25vw;
 }

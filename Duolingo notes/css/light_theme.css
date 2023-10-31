@@ -3,12 +3,21 @@
 @media (prefers-color-scheme: light) {
     :root {
         /* -- BODY MAIN COLORS -- */
-        --body-bg-color: #eee;
-        --body-text-color: #000;
+        --body-bg: #eee;
+        --body-text: #000;
 
-        /* -- THEME SWITCH BUTTON --  */
-        --theme-button-bg-color: #c7c7c7;
-        --theme-button-icon-color: #333;
+        /* -- HEADER BUTTONS --  */
+        --header-button-bg: #cecece;
+        --header-button-text: #000;
+        --header-button-icon: #333;
+
+        --header-dropdown-bg: #bbbbbb;
+        --header-input-border: #c2c2c2;
+        --header-button-alt-icon: #7a7a7a;
+        --header-scrollbar-bg: #a1a1a1;
+        --header-scrollbar-thumb: #f1f1f1;
+        --header-active-li: #a5a5a5;
+        --header-hover-li: #cecece;
     }
 }
 
@@ -16,10 +25,19 @@
 
 html[data-theme="light"] {
     /* -- BODY MAIN COLORS -- */
-    --body-bg-color: #eee;
-    --body-text-color: #000;
+    --body-bg: #eee;
+    --body-text: #000;
 
-    /* -- THEME SWITCH BUTTON --  */
-    --theme-button-bg-color: #c7c7c7;
-    --theme-button-icon-color: #333;
+    /* -- HEADER BUTTONS --  */
+    --header-button-bg: #cecece;
+    --header-button-text: #000;
+    --header-button-icon: #333;
+
+    --header-dropdown-bg: #bbbbbb;
+    --header-input-border: #c2c2c2;
+    --header-button-alt-icon: #7a7a7a;
+    --header-scrollbar-bg: #a1a1a1;
+    --header-scrollbar-thumb: #f1f1f1;
+    --header-active-li: #a5a5a5;
+    --header-hover-li: #cecece;
 }
