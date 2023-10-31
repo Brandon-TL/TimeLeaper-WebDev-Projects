@@ -17,7 +17,7 @@ delfaultLi.insertAdjacentHTML("beforeend", `
     <span class="select-none">${delfaultLang}</span>
 `);
 
-updateName(delfaultLi);
+updateName(delfaultLi); // Default language setting also runs addCountry function
 
 function addCountry (selectedLang) {
     optionsBox.innerHTML = "";
@@ -31,8 +31,6 @@ function addCountry (selectedLang) {
         `);
     }
 }
-
-addCountry();
 
 function updateName(selectedLi) {
     searchInput.value = "";

@@ -2,48 +2,40 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* -- BODY MAIN COLORS -- */
-        --body-bg: #eee;
-        --body-text: #000;
-
-        /* -- HEADER BUTTONS --  */
-        --header-button-bg: #cecece;
-        --header-button-text: #000;
-        --header-button-icon: #333;
-
-        --header-dropdown-bg: #bbbbbb;
-        --header-input-border: #c2c2c2;
-        --header-button-alt-icon: #7a7a7a;
-        --header-scrollbar-bg: #a1a1a1;
-        --header-scrollbar-thumb: #f1f1f1;
-        --header-active-li: #a5a5a5;
-        --header-hover-li: #cecece;
-
-        /* -- FOOTER -- */
-        --footer-anchor: rgb(255, 0, 0);
     }
 }
 
 /* -- LIGHT THEME COLORS SWITCH -- */
 
 html[data-theme="light"] {
-    /* -- BODY MAIN COLORS -- */
-    --body-bg: #eee;
-    --body-text: #000;
+    /* -- MAIN COLORS -- */
+    --main-bg: #ffffff;
+    --main-text: #000000;
 
-    /* -- HEADER BUTTONS --  */
-    --header-button-bg: #cecece;
-    --header-button-text: #000;
-    --header-button-icon: #333;
+    /* -- HEADER TAB BUTTONS -- */
+    --header-button-bg: #eeeeee;
+    --header-button-border: 1px solid rgba(0, 0, 0, 0.1);
+    --header-button-hover-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    --header-active-button-bg: #000000;
+    --tab-active-text: #ffffff;
 
-    --header-dropdown-bg: #bbbbbb;
-    --header-input-border: #c2c2c2;
-    --header-button-alt-icon: #7a7a7a;
-    --header-scrollbar-bg: #a1a1a1;
-    --header-scrollbar-thumb: #f1f1f1;
-    --header-active-li: #a5a5a5;
-    --header-hover-li: #cecece;
+    /* -- SELECT DROPDOWN -- */
+    --dropdown-button-icon: #333;
+    
+    --dropdown-text: #fff;
+    --dropdown-content-bg: #d4d4d4;
+    --dropdown-search-icon: #8a8a8a;
+    --dropdown-input-border: #b3b3b3;
+    --dropdown-scrollbar-bg: #2e2e2e;
+    --dropdown-scrollbar-thumb: #5e5e5e;
+    --dropdown-active-li: #2c2c2c;
+    --dropdown-hover-li: #4c4c4c;
+    --dropdown-option-text-shadow: #00000036;
+
+    
+    /* -- THEME SWITCH BUTTON --  */
+    --theme-button-icon: #333;
 
     /* -- FOOTER -- */
-    --footer-anchor: rgb(255, 0, 0);
+    --footer-anchor: rgb(0, 255, 255);
 }
