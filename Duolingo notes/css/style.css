@@ -1,8 +1,8 @@
 /* -- IMPORT FONTS AND THEME FILES -- */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
-@import url('css/light_theme.css');
-@import url('css/dark_theme.css');
+@import url('./light_theme.css');
+@import url('./dark_theme.css');
 
 /* -- GENERAL CSS RESETS -- */
 
@@ -13,20 +13,24 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+.select-none {
+    user-select: none;
+}
+
 body {
-    background-color: var(--body-bg);
-    color: var(--body-text);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     overflow: hidden;
 }
 
 /* -- HEADER -- */
 
 header {
-    background-color: var(--body-bg);
-    box-shadow: 0 0 2em 3em var(--body-bg);
+    background-color: var(--main-bg);
+    box-shadow: 0 0 2em 3em var(--main-bg);
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
     height: 5em;
     width: 100%;
@@ -50,41 +54,73 @@ header {
     }
 }
 
-/* -- SELECT LANG DROPDOWN CONTAINER -- */
+/* -- TABS CONTAINER -- */
+
+.primary-container {
+    & .select-tab {
+        background-color: var(--tab-button-bg);
+    }
+
+    & .tab-button {
+        border: 3px solid var(--tab-button-border);
+        padding: calc(1em - 6px) 2em;
+        border-radius: 0.5em;
+        margin-right: 1em;
+        cursor: pointer;
+
+        &:focus {
+            background-color: var(--tab-active-button-bg);
+        }
+
+        &:hover {
+            background-color: var(--tab-button-hover);
+        }
+    }
+}
+
+/* -- SELECT DROPDOWN CONTAINER -- */
 
 .secondary-container .select-wrapper {
     color: #fff;
     border-radius: 0.5em;
     min-width: 17em;
 
-    & .select-btn, & .options li {
+    & .select-btn, & .lang-viewer, & .options li {
         display: flex;
+        flex-direction: row;
         align-items: center;
         height: 3em;
         cursor: pointer;
     }
 
+    & .lang-viewer img, & .options li img {
+        width: 2em;
+        border-radius: 0.5em;
+        margin-right: 1em;
+        aspect-ratio: 1/1;
+    }
+
     & .select-btn { /* -- Select button -- */
-        background-color: var(--header-button-bg);
-        color: var(--header-button-text);
+        background-color: var(--dropdown-bg);
+        color: var(--main-text);
         justify-content: space-between;
         padding: 0 1em;
         border-radius: 0.5em;
         font-size: 1em;
 
         &:hover {
-            background-color: var(--header-dropdown-bg);
+            background-color: var(--dropdown-hover-bg);
         }
 
         & ion-icon {
-            color: var(--header-button-icon);
+            color: var(--dropdown-button-icon);
             font-size: 1.35em;
             transition: transform 0.2s linear;
         }
     }
     
     &.active .select-btn {
-        background-color: var(--header-dropdown-bg);
+        background-color: var(--dropdown-hover-bg);
 
         & ion-icon {
             transform: rotate(-180deg);
@@ -96,8 +132,8 @@ header {
     }
 
     & .content { /* -- Dropdown container -- */
-        background-color: var(--header-dropdown-bg);
-        color: var(--header-button-text);
+        background-color: var(--dropdown-content-bg);
+        color: var(--dropdown-text);
         display: none;
         margin-top: 0.5em;
         padding: 0.75em;
@@ -107,7 +143,7 @@ header {
             position: relative;
 
             & ion-icon {
-                color: var(--header-button-alt-icon);
+                color: var(--dropdown-search-icon);
                 pointer-events: none;
                 position: absolute;
                 inset: 1em;
@@ -121,7 +157,7 @@ header {
                 font-size: 1em;
                 padding-left: 2.5em;
                 border-radius: 0.5em;
-                border: 1px solid var(--header-input-border);
+                border: 1px solid var(--dropdown-input-border);
             }
         }
 
@@ -136,12 +172,12 @@ header {
             }
 
             &::-webkit-scrollbar-track {
-                background-color: var(--header-scrollbar-bg);
+                background-color: var(--dropdown-scrollbar-bg);
                 border-radius: 25px;
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: var(--header-scrollbar-thumb);
+                background-color: var(--dropdown-scrollbar-thumb);
                 border-radius: 25px;
             }
 
@@ -151,11 +187,11 @@ header {
                 border-radius: 0.5em;
 
                 &.selected {
-                    background-color: var(--header-active-li);
+                    background-color: var(--dropdown-active-li);
                 }
 
                 &:hover {
-                    background-color: var(--header-hover-li);
+                    background-color: var(--dropdown-hover-li);
                 }
             }
         }
@@ -187,9 +223,23 @@ header {
     }
 }
 
-/* -- TABS CONTAINER -- */
+/* -- FOOTER COPYRIGHT TEXT -- */
 
-.primary-container {
-    background-color: rgb(0, 102, 255);
-    width: 25vw;
+footer {
+    background-color: var(--body-bg);
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+
+    &:hover a {
+        color: var(--footer-anchor);
+    }
+
+    & a {
+        color: var(--body-text);
+        text-decoration: none;
+    }
 }

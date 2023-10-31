@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,20 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Learning Languages</title>
 </head>
 <body>
     <header>
         <div class="primary-container">
-            <div>Dictionary</div>
-            <div>Pronouns</div>
-            <div>Settings</div>
+            <div class="tab-button select-none select-tab">Dictionary</div>
+            <div class="tab-button select-none">Pronouns</div>
+            <div class="tab-button select-none">Settings</div>
         </div>
         <div class="secondary-container">
             <div class="select-wrapper">
                 <div class="select-btn">
-                    <span>Select a country</span>
+                    <span class="lang-viewer">Select a country</span>
                     <ion-icon name="chevron-down"></ion-icon>
                 </div>
                 <div class="content">
@@ -37,10 +37,17 @@
             </button>
         </div>
     </header>
+    <main>
+
+    </main>
+    <footer class="select-none">
+        &copy; <script>document.write("2023 &ndash; "+new Date().getFullYear())</script> &middot;
+        <a href="https://github.com/Brandon-TL" target="_blank" title="owner">Time Leaper</a> &middot; Todos los derechos reservados
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script defer src="./scripts/toggle-theme.js"></script>
-    <script defer src="./scripts/lang-select.js"></script>
+    <script defer src="./javascript/toggle-theme.js"></script>
+    <script defer src="./javascript/lang-select.js"></script>
 </body>
 </html>

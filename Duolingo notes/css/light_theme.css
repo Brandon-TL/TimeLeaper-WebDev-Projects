@@ -18,6 +18,9 @@
         --header-scrollbar-thumb: #f1f1f1;
         --header-active-li: #a5a5a5;
         --header-hover-li: #cecece;
+
+        /* -- FOOTER -- */
+        --footer-anchor: rgb(255, 0, 0);
     }
 }
 
@@ -40,4 +43,7 @@ html[data-theme="light"] {
     --header-scrollbar-thumb: #f1f1f1;
     --header-active-li: #a5a5a5;
     --header-hover-li: #cecece;
+
+    /* -- FOOTER -- */
+    --footer-anchor: rgb(255, 0, 0);
 }

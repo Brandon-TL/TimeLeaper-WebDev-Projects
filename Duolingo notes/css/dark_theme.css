@@ -2,42 +2,42 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* -- BODY MAIN COLORS -- */
-        --body-bg: #111;
-        --body-text: #fff;
-    
-        /* -- HEADER BUTTONS --  */
-        --header-button-bg: #222;
-        --header-button-text: #fff;
-        --header-button-icon: #fff;
 
-        --header-dropdown-bg: #3a3a3a;
-        --header-input-border: #b3b3b3;
-        --header-button-alt-icon: #8a8a8a;
-        --header-scrollbar-bg: #2e2e2e;
-        --header-scrollbar-thumb: #5e5e5e;
-        --header-active-li: #2c2c2c;
-        --header-hover-li: #4c4c4c;
     }
 }
 
 /* -- DARK THEME COLORS SWITCH  -- */
 
 html[data-theme="dark"] {
-    /* -- BODY MAIN COLORS -- */
-    --body-bg: #111;
-    --body-text: #fff;
-    
-    /* -- HEADER BUTTONS --  */
-    --header-button-bg: #222;
-    --header-button-text: #fff;
-    --header-button-icon: #fff;
+    /* -- MAIN COLORS -- */
+    --main-bg: #111;
+    --main-text: #fff;
 
-    --header-dropdown-bg: #3a3a3a;
-    --header-input-border: #b3b3b3;
-    --header-button-alt-icon: #8a8a8a;
-    --header-scrollbar-bg: #2e2e2e;
-    --header-scrollbar-thumb: #5e5e5e;
-    --header-active-li: #2c2c2c;
-    --header-hover-li: #4c4c4c;
+    /* -- HEADER TAB BUTTONS -- */
+    --tab-active-button-bg: #ffffff;
+    --tab-button-bg: #222;
+    --tab-button-border: #222;
+    --tab-button-hover: #222;
+
+    /* -- SELECT DROPDOWN -- */
+    --dropdown-bg: #222;
+    --dropdown-hover-bg: #3a3a3a;
+    --dropdown-button-icon: #ffF;
+    --dropdown-text: #fff;
+    --dropdown-content-bg: #3a3a3a;
+    --dropdown-search-icon: #8a8a8a;
+    --dropdown-input-border: #b3b3b3;
+    --dropdown-scrollbar-bg: #2e2e2e;
+    --dropdown-scrollbar-thumb: #5e5e5e;
+    --dropdown-hover-li: #4c4c4c;
+    --dropdown-active-li: #2c2c2c;
+
+    
+    /* -- THEME SWITCH BUTTON --  */
+    --theme-button-bg: #222;
+    --theme-button-text: #fff;
+    --theme-button-icon: #fff;
+
+    /* -- FOOTER -- */
+    --footer-anchor: rgb(0, 255, 255);
 }
