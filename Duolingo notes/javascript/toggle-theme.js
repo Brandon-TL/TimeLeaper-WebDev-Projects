@@ -1,4 +1,4 @@
-const storageKey = 'theme-preference';
+const LCI_THEME = 'LCI_THEME';
 
 const onClick = () => {
     theme.value = theme.value === 'light' ? 'dark' : 'light';
@@ -17,15 +17,15 @@ const toSun = () => {
 }
 
 const getColorPreference = () => {
-    if (localStorage.getItem(storageKey)) {
-        return localStorage.getItem(storageKey);
+    if (localStorage.getItem(LCI_THEME)) {
+        return localStorage.getItem(LCI_THEME);
     } else {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 }
 
 const setPreference = () => {
-    localStorage.setItem(storageKey, theme.value);
+    localStorage.setItem(LCI_THEME, theme.value);
     reflectPreference();
 }
 

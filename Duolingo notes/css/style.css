@@ -18,16 +18,16 @@
 }
 
 body {
-    background-color: var(--main-bg);
-    color: var(--main-text);
+    background-color: var(--body-bg);
+    color: var(--body-text);
     overflow: hidden;
 }
 
 /* -- HEADER -- */
 
 header {
-    background-color: var(--main-bg);
-    box-shadow: 0 0 2em 3em var(--main-bg);
+    background-color: var(--header-bg);
+    box-shadow: var(--header-shadow);
 
     display: flex;
     justify-content: space-between;
@@ -58,21 +58,20 @@ header {
 
 .primary-container {
     & .tab-button {
-        background-color: var(--header-button-bg);
-        border: var(--header-button-border);
+        background-color: var(--tab-button-bg);
+        border: var(--tab-button-border);
         padding: calc(1em - 2px) 2em;
         border-radius: 0.5em;
         margin-right: 1em;
         cursor: pointer;
 
         &:hover {
-            box-shadow: var(--header-button-hover-shadow);
+            box-shadow: var(--tab-button-hover-shadow);
         }
     }
     
-    & .selected-tab {
-        background-color: var(--header-active-button-bg);
-        color: var(--tab-active-text);
+    & .active {
+        background-color: var(--tab-active-bg);
     }
 }
 
@@ -100,18 +99,19 @@ header {
 
     & .select-btn { /* -- Select button -- */
         background-color: var(--dropdown-bg);
-        color: var(--main-text);
+        color: var(--dropdown-text);
         justify-content: space-between;
         padding: 0 1em;
         border-radius: 0.5em;
         font-size: 1em;
 
         &:hover {
-            box-shadow: var(--header-button-hover-shadow);
+            background-color: var(--dropdown-hover-bg);
+            box-shadow: var(--dropdown-hover-shadow);
         }
 
         & ion-icon {
-            color: var(--dropdown-button-icon);
+            color: var(--dropdown-arrow-color);
             font-size: 1.35em;
             transition: transform 0.2s linear;
         }

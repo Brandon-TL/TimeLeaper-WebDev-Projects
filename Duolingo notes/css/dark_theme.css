@@ -2,70 +2,43 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* -- MAIN COLORS -- */
-        --main-bg: #111;
-        --main-text: #ffffff;
+        /* -- BODY -- */
+        --body-bg: #111;
+        --body-text: #fff;
     
-        /* -- HEADER TAB BUTTONS -- */
-        --tab-active-button-bg: #ffffff;
-        --tab-button-bg: #222;
-        --tab-button-border: #222;
-        --tab-button-hover: #222;
+        /* -- HEADER -- */
+        --header-bg: #111;
+        --header-shadow: 0 0 2em 3em var(--header-bg);
     
-        /* -- SELECT DROPDOWN -- */
-        --dropdown-bg: #222;
-        --dropdown-hover-bg: #3a3a3a;
-        --dropdown-button-icon: #ffF;
-        --dropdown-text: #fff;
-        --dropdown-content-bg: #3a3a3a;
-        --dropdown-search-icon: #8a8a8a;
-        --dropdown-input-border: #b3b3b3;
-        --dropdown-scrollbar-bg: #2e2e2e;
-        --dropdown-scrollbar-thumb: #5e5e5e;
-        --dropdown-active-li: #2c2c2c;
-        --dropdown-hover-li: #4c4c4c;
-    
-        
-        /* -- THEME SWITCH BUTTON --  */
-        --theme-button-bg: #222;
-        --theme-button-icon: #fff;
-    
-        /* -- FOOTER -- */
-        --footer-anchor: rgb(0, 255, 255);
+        /* -- HEADER TABS -- */
+        --tab-button-bg: rgba(33, 33, 33, 0.4);
+        --tab-button-border: 1px solid var(--tab-button-bg);
+        --tab-button-hover-shadow: 0 0 5px #000;
+        --tab-active-bg: #2c2c2c;
     }
 }
 
 /* -- DARK THEME COLORS SWITCH  -- */
 
 html[data-theme="dark"] {
-    /* -- MAIN COLORS -- */
-    --main-bg: #111;
-    --main-text: #fff;
+    /* -- BODY -- */
+    --body-bg: #111;
+    --body-text: #fff;
 
-    /* -- HEADER TAB BUTTONS -- */
-    --tab-active-button-bg: #ffffff;
-    --tab-button-bg: #222;
-    --tab-button-border: #222;
-    --tab-button-hover: #222;
+    /* -- HEADER -- */
+    --header-bg: #111;
+    --header-shadow: 0 0 2em 3em var(--header-bg);
 
-    /* -- SELECT DROPDOWN -- */
-    --dropdown-bg: #222;
-    --dropdown-hover-bg: #3a3a3a;
-    --dropdown-button-icon: #ffF;
+    /* -- HEADER TABS -- */
+    --tab-button-bg: rgba(33, 33, 33, 0.4);
+    --tab-button-border: 1px solid var(--tab-button-bg);
+    --tab-button-hover-shadow: 0 0 5px #000;
+    --tab-active-bg: #2c2c2c;
+
+    /* -- SELECT DROPDOWN --*/
+    --dropdown-bg: rgba(33, 33, 33, 0.4);
     --dropdown-text: #fff;
-    --dropdown-content-bg: #3a3a3a;
-    --dropdown-search-icon: #8a8a8a;
-    --dropdown-input-border: #b3b3b3;
-    --dropdown-scrollbar-bg: #2e2e2e;
-    --dropdown-scrollbar-thumb: #5e5e5e;
-    --dropdown-active-li: #2c2c2c;
-    --dropdown-hover-li: #4c4c4c;
-
-    
-    /* -- THEME SWITCH BUTTON --  */
-    --theme-button-bg: #222;
-    --theme-button-icon: #fff;
-
-    /* -- FOOTER -- */
-    --footer-anchor: rgb(0, 255, 255);
+    --dropdown-hover-bg: #212121;
+    --dropdown-hover-shadow: 0 0 5px #000;
+    --dropdown-arrow-color: #fff;
 }

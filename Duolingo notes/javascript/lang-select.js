@@ -44,14 +44,14 @@ searchInput.addEventListener("keyup", (e) => {
     let arrSearch = [];
     let searchedLang = searchInput.value.toLowerCase();
 
-    console.log(/[a-zA-Z0-9-_ ]/.test(e.key));
-    if (/[a-zA-Z0-9]/.test(e.key)) {
-        addCountry();
-    } else {
-        arrSearch = countries.filter(data => {
-            return data.toLowerCase().startsWith(searchedLang);
-        }).map((data) => `<li onclick="updateName(this)">${data}</li>`).join("");
-    }
+    arrSearch = countries.filter(data => {
+        return data.toLowerCase().startsWith(searchedLang);
+    }).map((data) => `
+        <li onclick="updateName(this)">
+            <img src="./languages/flags/${data}.png" class="select-none">
+            <span class="select-none">${data}</span>
+        </li>
+    `).join("");
     
     optionsBox.innerHTML = arrSearch ? arrSearch : `<p class="select-none">Lang not found</p>`;
 });

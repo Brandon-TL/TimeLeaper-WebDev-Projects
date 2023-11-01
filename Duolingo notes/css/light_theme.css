@@ -8,34 +8,4 @@
 /* -- LIGHT THEME COLORS SWITCH -- */
 
 html[data-theme="light"] {
-    /* -- MAIN COLORS -- */
-    --main-bg: #ffffff;
-    --main-text: #000000;
-
-    /* -- HEADER TAB BUTTONS -- */
-    --header-button-bg: #eeeeee;
-    --header-button-border: 1px solid rgba(0, 0, 0, 0.1);
-    --header-button-hover-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    --header-active-button-bg: #000000;
-    --tab-active-text: #ffffff;
-
-    /* -- SELECT DROPDOWN -- */
-    --dropdown-button-icon: #333;
-    
-    --dropdown-text: #fff;
-    --dropdown-content-bg: #d4d4d4;
-    --dropdown-search-icon: #8a8a8a;
-    --dropdown-input-border: #b3b3b3;
-    --dropdown-scrollbar-bg: #2e2e2e;
-    --dropdown-scrollbar-thumb: #5e5e5e;
-    --dropdown-active-li: #2c2c2c;
-    --dropdown-hover-li: #4c4c4c;
-    --dropdown-option-text-shadow: #00000036;
-
-    
-    /* -- THEME SWITCH BUTTON --  */
-    --theme-button-icon: #333;
-
-    /* -- FOOTER -- */
-    --footer-anchor: rgb(0, 255, 255);
 }
