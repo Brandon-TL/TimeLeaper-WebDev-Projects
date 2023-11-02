@@ -2,10 +2,98 @@
 
 @media (prefers-color-scheme: light) {
     :root {
+        /* -- BODY -- */
+        --body-bg: #fff;
+        --body-text: #000;
+    
+        /* -- HEADER -- */
+        --header-bg: var(--body-bg);
+        --header-shadow: 0 0 2em 3em var(--header-bg);
+    
+        /* -- HEADER TABS -- */
+        --tab-button-bg: rgba(222, 222, 222, 0.4);
+        --tab-button-border: 1px solid var(--tab-button-bg);
+        --tab-button-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        --tab-active-bg: rgba(150, 150, 150);
+        --tab-active-text: var(--body-bg);
+    
+        /* -- SELECT DROPDOWN BUTTON --*/
+        --dropdown-bg: rgba(222, 222, 222, 0.6);
+        --dropdown-text: #5e5e5e;
+        --dropdown-hover-bg: #dddddd;
+        --dropdown-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        --dropdown-arrow-color: #5e5e5e;
+        --dropdown-active-bg: #dddddd;
+        --dropdown-active-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        
+        /* -- SELECT DROPDOWN CONTENT BOX -- */
+        --dropdown-content-bg: #dddddd;
+        --dropdown-content-text: #5e5e5e;
+        --dropdown-content-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        --dropdown-search-icon: rgba(0, 0, 0, 0.5);
+        --dropdown-scrollbar-bg: #eee;
+        --dropdown-scrollbar-thumb: #ccc;
+        --dropdown-active-li-bg: rgb(186, 186, 186);
+        --dropdown-hover-li-bg: rgba(186, 186, 186, 0.4);
+    
+        /* -- THEME BUTTON -- */
+        --theme-bg: rgba(222, 222, 222, 0.6);
+        --theme-icon: #5e5e5e;
+        --theme-hover-bg: #dddddd;
+        --theme-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+        /* -- FOOTER -- */
+        --footer-bg: var(--body-bg);
+        --footer-link: var(--body-text);
+        --footer-hover-link: rgb(255, 50, 50);
     }
 }
 
 /* -- LIGHT THEME COLORS SWITCH -- */
 
 html[data-theme="light"] {
+    /* -- BODY -- */
+    --body-bg: #fff;
+    --body-text: #000;
+
+    /* -- HEADER -- */
+    --header-bg: var(--body-bg);
+    --header-shadow: 0 0 2em 3em var(--header-bg);
+
+    /* -- HEADER TABS -- */
+    --tab-button-bg: rgba(222, 222, 222, 0.4);
+    --tab-button-border: 1px solid var(--tab-button-bg);
+    --tab-button-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    --tab-active-bg: rgba(150, 150, 150);
+    --tab-active-text: var(--body-bg);
+
+    /* -- SELECT DROPDOWN BUTTON --*/
+    --dropdown-bg: rgba(222, 222, 222, 0.6);
+    --dropdown-text: #5e5e5e;
+    --dropdown-hover-bg: #dddddd;
+    --dropdown-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    --dropdown-arrow-color: #5e5e5e;
+    --dropdown-active-bg: #dddddd;
+    --dropdown-active-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+    /* -- SELECT DROPDOWN CONTENT BOX -- */
+    --dropdown-content-bg: #dddddd;
+    --dropdown-content-text: #5e5e5e;
+    --dropdown-content-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    --dropdown-search-icon: rgba(0, 0, 0, 0.5);
+    --dropdown-scrollbar-bg: #eee;
+    --dropdown-scrollbar-thumb: #ccc;
+    --dropdown-active-li-bg: rgb(186, 186, 186);
+    --dropdown-hover-li-bg: rgba(186, 186, 186, 0.4);
+
+    /* -- THEME BUTTON -- */
+    --theme-bg: rgba(222, 222, 222, 0.6);
+    --theme-icon: #5e5e5e;
+    --theme-hover-bg: #dddddd;
+    --theme-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    /* -- FOOTER -- */
+    --footer-bg: var(--body-bg);
+    --footer-link: var(--body-text);
+    --footer-hover-link: rgb(255, 50, 50);
 }
