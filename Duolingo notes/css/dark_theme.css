@@ -5,6 +5,7 @@
         /* -- BODY -- */
         --body-bg: #111;
         --body-text: #fff;
+        --body-scrollbar-thumb: #2c2c2c;
     
         /* -- HEADER -- */
         --header-bg: var(--body-bg);
@@ -13,7 +14,7 @@
         /* -- HEADER TABS -- */
         --tab-button-bg: rgba(33, 33, 33, 0.4);
         --tab-button-border: 1px solid var(--tab-button-bg);
-        --tab-button-hover-shadow: 0 0 5px #000;
+        --tab-button-hover-shadow: 0 0 0 1px rgb(255, 255, 255, 0.5);
         --tab-active-bg: #2c2c2c;
         --tab-active-text: var(--body-text);
     
@@ -39,7 +40,7 @@
         /* -- THEME BUTTON -- */
         --theme-bg: rgba(33, 33, 33, 0.5);
         --theme-icon: #fff;
-        --theme-hover-bg: #212121;
+        --theme-hover-bg: #353535;
         --theme-hover-shadow: 0 0 5px #000;
     
         /* -- FOOTER -- */
@@ -55,6 +56,7 @@ html[data-theme="dark"] {
     /* -- BODY -- */
     --body-bg: #111;
     --body-text: #fff;
+    --body-scrollbar-thumb: #2c2c2c;
 
     /* -- HEADER -- */
     --header-bg: var(--body-bg);
@@ -63,7 +65,7 @@ html[data-theme="dark"] {
     /* -- HEADER TABS -- */
     --tab-button-bg: rgba(33, 33, 33, 0.4);
     --tab-button-border: 1px solid var(--tab-button-bg);
-    --tab-button-hover-shadow: 0 0 5px #000;
+    --tab-button-hover-shadow: 0 0 0 1px rgb(255, 255, 255, 0.5);
     --tab-active-bg: #2c2c2c;
     --tab-active-text: var(--body-text);
 
@@ -89,7 +91,7 @@ html[data-theme="dark"] {
     /* -- THEME BUTTON -- */
     --theme-bg: rgba(33, 33, 33, 0.5);
     --theme-icon: #fff;
-    --theme-hover-bg: #212121;
+    --theme-hover-bg: #353535;
     --theme-hover-shadow: 0 0 5px #000;
 
     /* -- FOOTER -- */

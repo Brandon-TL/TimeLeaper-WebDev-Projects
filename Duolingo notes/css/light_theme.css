@@ -5,6 +5,7 @@
         /* -- BODY -- */
         --body-bg: #fff;
         --body-text: #000;
+        --body-scrollbar-thumb: rgba(150, 150, 150);
     
         /* -- HEADER -- */
         --header-bg: var(--body-bg);
@@ -13,7 +14,7 @@
         /* -- HEADER TABS -- */
         --tab-button-bg: rgba(222, 222, 222, 0.4);
         --tab-button-border: 1px solid var(--tab-button-bg);
-        --tab-button-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        --tab-button-hover-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
         --tab-active-bg: rgba(150, 150, 150);
         --tab-active-text: var(--body-bg);
     
@@ -55,6 +56,7 @@ html[data-theme="light"] {
     /* -- BODY -- */
     --body-bg: #fff;
     --body-text: #000;
+    --body-scrollbar-thumb: rgba(150, 150, 150);
 
     /* -- HEADER -- */
     --header-bg: var(--body-bg);
@@ -63,7 +65,7 @@ html[data-theme="light"] {
     /* -- HEADER TABS -- */
     --tab-button-bg: rgba(222, 222, 222, 0.4);
     --tab-button-border: 1px solid var(--tab-button-bg);
-    --tab-button-hover-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    --tab-button-hover-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
     --tab-active-bg: rgba(150, 150, 150);
     --tab-active-text: var(--body-bg);
 

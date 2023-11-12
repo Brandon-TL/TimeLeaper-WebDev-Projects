@@ -20,7 +20,21 @@
 body {
     background-color: var(--body-bg);
     color: var(--body-text);
-    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: var(--body-bg);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--body-scrollbar-thumb);
+    }
 }
 
 /* -- HEADER -- */
@@ -67,6 +81,7 @@ header {
 
         &:hover {
             box-shadow: var(--tab-button-hover-shadow);
+            /* border: 2px solid rgba(0, 0, 0 ,1); */
         }
     }
     
@@ -76,7 +91,7 @@ header {
     }
 }
 
-/* -- SELECT DROPDOWN CONTAINER -- */
+/* -- SELECT DROPDOWN -- */
 
 .secondary-container .select-wrapper {
     color: #fff;
@@ -226,6 +241,46 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+/* -- MAIN -- */
+
+main {
+    width: 100%;
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: 100px [tab-content-start] 1fr [tab-content-end] 100px;
+
+    & .card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        width: max-content;
+        text-align: center;
+        padding: 15px;
+
+        & .img {
+            width: 150px;
+
+            & img {
+                width: 100%;
+                aspect-ratio: 1;
+            }
+        }
+
+        & .name, & .traduction, & .pronunciation {
+            padding-top: 10px;
+        }
+
+        & .pronunciation {
+            color: rgba(255, 255, 255, 0.5);
+            font-style: italic;
+        }
+    }
+
+    & > * {
+        grid-column: tab-content;
     }
 }
 

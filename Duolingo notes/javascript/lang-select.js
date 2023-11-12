@@ -1,6 +1,6 @@
 const selectWrapper = document.querySelector('.select-wrapper');
 const selectBtn = selectWrapper.querySelector('.select-btn');
-const searchInput = selectWrapper.querySelector('input');
+const searchInput = selectWrapper.querySelector('#lang-search');
 const langViewer = selectWrapper.querySelector('.lang-viewer');
 const optionsBox = selectWrapper.querySelector('.options');
 
