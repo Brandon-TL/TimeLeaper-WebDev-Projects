@@ -1,0 +1,101 @@
+/* -- USER THEME COLOR PREFERENCES -- */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* -- BODY -- */
+        --body-bg: #111;
+        --body-text: #fff;
+        --body-scrollbar-thumb: #2c2c2c;
+    
+        /* -- HEADER -- */
+        --header-bg: var(--body-bg);
+        --header-shadow: 0 0 2em 3em var(--header-bg);
+    
+        /* -- HEADER TABS -- */
+        --tab-button-bg: rgba(33, 33, 33, 0.4);
+        --tab-button-border: 1px solid var(--tab-button-bg);
+        --tab-button-hover-shadow: 0 0 0 1px rgb(255, 255, 255, 0.5);
+        --tab-active-bg: #2c2c2c;
+        --tab-active-text: var(--body-text);
+    
+        /* -- SELECT DROPDOWN BUTTON --*/
+        --dropdown-bg: rgba(33, 33, 33, 0.4);
+        --dropdown-text: #fff;
+        --dropdown-hover-bg: #212121;
+        --dropdown-hover-shadow: 0 0 5px #000;
+        --dropdown-arrow-color: #fff;
+        --dropdown-active-bg: #212121;
+        --dropdown-active-shadow: 0 0 5px #000;
+        
+        /* -- SELECT DROPDOWN CONTENT BOX -- */
+        --dropdown-content-bg: #212121;
+        --dropdown-content-text: var(--body-text);
+        --dropdown-content-shadow: 0 0 5px #000;
+        --dropdown-search-icon: rgba(0, 0, 0, 0.5);
+        --dropdown-scrollbar-bg: var(--body-bg);
+        --dropdown-scrollbar-thumb: #333;
+        --dropdown-active-li-bg: #1a1a1a;
+        --dropdown-hover-li-bg: #2c2c2c;
+    
+        /* -- THEME BUTTON -- */
+        --theme-bg: rgba(33, 33, 33, 0.5);
+        --theme-icon: #fff;
+        --theme-hover-bg: #353535;
+        --theme-hover-shadow: 0 0 5px #000;
+    
+        /* -- FOOTER -- */
+        --footer-bg: var(--body-bg);
+        --footer-link: var(--body-text);
+        --footer-hover-link: aquamarine;
+    }
+}
+
+/* -- DARK THEME COLORS SWITCH  -- */
+
+html[data-theme="dark"] {
+    /* -- BODY -- */
+    --body-bg: #111;
+    --body-text: #fff;
+    --body-scrollbar-thumb: #2c2c2c;
+
+    /* -- HEADER -- */
+    --header-bg: var(--body-bg);
+    --header-shadow: 0 0 2em 3em var(--header-bg);
+
+    /* -- HEADER TABS -- */
+    --tab-button-bg: rgba(33, 33, 33, 0.4);
+    --tab-button-border: 1px solid var(--tab-button-bg);
+    --tab-button-hover-shadow: 0 0 0 1px rgb(255, 255, 255, 0.5);
+    --tab-active-bg: #2c2c2c;
+    --tab-active-text: var(--body-text);
+
+    /* -- SELECT DROPDOWN BUTTON --*/
+    --dropdown-bg: rgba(33, 33, 33, 0.4);
+    --dropdown-text: #fff;
+    --dropdown-hover-bg: #212121;
+    --dropdown-hover-shadow: 0 0 5px #000;
+    --dropdown-arrow-color: #fff;
+    --dropdown-active-bg: #212121;
+    --dropdown-active-shadow: 0 0 5px #000;
+    
+    /* -- SELECT DROPDOWN CONTENT BOX -- */
+    --dropdown-content-bg: #212121;
+    --dropdown-content-text: var(--body-text);
+    --dropdown-content-shadow: 0 0 5px #000;
+    --dropdown-search-icon: rgba(0, 0, 0, 0.5);
+    --dropdown-scrollbar-bg: var(--body-bg);
+    --dropdown-scrollbar-thumb: #333;
+    --dropdown-active-li-bg: #1a1a1a;
+    --dropdown-hover-li-bg: #2c2c2c;
+
+    /* -- THEME BUTTON -- */
+    --theme-bg: rgba(33, 33, 33, 0.5);
+    --theme-icon: #fff;
+    --theme-hover-bg: #353535;
+    --theme-hover-shadow: 0 0 5px #000;
+
+    /* -- FOOTER -- */
+    --footer-bg: var(--body-bg);
+    --footer-link: var(--body-text);
+    --footer-hover-link: aquamarine;
+}
