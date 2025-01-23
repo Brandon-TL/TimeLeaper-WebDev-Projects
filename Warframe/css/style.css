@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+	width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #0D1117;
+	color: white;
+}
