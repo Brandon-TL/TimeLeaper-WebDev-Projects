@@ -1,15 +1,11 @@
-import requests
 from bs4 import BeautifulSoup
-import json
+import requests
 
-url = 'https://warframe.market/items/eternal_onslaught'
-respuesta = requests.get(url)
+url = 'https://api.warframe.market/v2/orders/item/eternal_onslaught'
 
-def scrapp():
-    if respuesta.status_code == 200:
-        soup = BeautifulSoup(respuesta.text, 'html.parser')
-        items = soup.find_all('script', id="application-state")
-        return items
+response = requests.get(url)
+html_text = response.text
+soup = BeautifulSoup(html_text, 'lxml')
+# tags = soup.find_all('div', class_ = 'container')
 
-    else:
-        return("error {respuesta.status_code}")
+print(html_text)
